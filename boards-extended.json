@@ -1,1 +1,7696 @@
-{"boards": []}
+[
+  {
+    "id": "m5stack-core2",
+    "name": "M5Stack Core2",
+    "variant": "v1.1",
+    "manufacturer": "M5Stack",
+    "family": "ESP32",
+    "chip": "ESP32-D0WDQ6-V3",
+    "description": "2-inch capacitive touch display dev kit with IMU, RTC, speaker, mic, and AXP192 PMU",
+    "specs": {
+      "processor": "Dual-core Xtensa LX6 @ 240MHz",
+      "flash": "16MB",
+      "sram": "520KB",
+      "psram": "8MB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 4.2 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 10,
+      "adcChannels": 2,
+      "dacChannels": 2,
+      "uartPorts": 3,
+      "spiPorts": 1,
+      "i2cPorts": 1,
+      "pwmChannels": 16,
+      "totalPins": 15,
+      "battery": "500mAh"
+    },
+    "internalPeripherals": {
+      "display": {
+        "type": "IPS LCD 2.0\" 320x240",
+        "driver": "ILI9342C",
+        "interface": "SPI",
+        "pins": {
+          "cs": 5,
+          "dc": 15,
+          "sclk": 18,
+          "mosi": 23,
+          "rst": -1,
+          "backlight": -1
+        }
+      },
+      "touchscreen": {
+        "type": "Capacitive",
+        "driver": "FT6336U",
+        "interface": "I2C",
+        "pins": {
+          "sda": 21,
+          "scl": 22,
+          "int": 39
+        }
+      },
+      "imu": {
+        "type": "6-axis",
+        "driver": "MPU6886",
+        "interface": "I2C",
+        "address": "0x68"
+      },
+      "pmu": {
+        "type": "Power management",
+        "driver": "AXP192",
+        "interface": "I2C",
+        "address": "0x34"
+      },
+      "rtc": {
+        "type": "RTC",
+        "driver": "BM8563",
+        "interface": "I2C",
+        "address": "0x51"
+      },
+      "speaker": {
+        "type": "I2S",
+        "driver": "NS4168",
+        "pins": {
+          "bclk": 12,
+          "lrck": 0,
+          "din": 2
+        }
+      },
+      "microphone": {
+        "type": "PDM",
+        "driver": "SPM1423",
+        "pins": {
+          "clk": 0,
+          "data": 34
+        }
+      },
+      "sdcard": {
+        "interface": "SPI",
+        "pins": {
+          "cs": 4,
+          "sclk": 18,
+          "mosi": 23,
+          "miso": 38
+        }
+      },
+      "vibration": {
+        "pin": 33
+      }
+    },
+    "availableGPIOs": [
+      13,
+      14,
+      19,
+      25,
+      26,
+      27,
+      32,
+      33,
+      35,
+      36
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO32",
+        "gpio": 32,
+        "aliases": [
+          "GROVE_A"
+        ],
+        "side": "grove_a",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port A. I2C SDA / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO33",
+        "gpio": 33,
+        "aliases": [
+          "GROVE_A"
+        ],
+        "side": "grove_a",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port A. I2C SCL / GPIO / Vibration motor",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": "Vibration motor (optional)"
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO26",
+        "gpio": 26,
+        "aliases": [
+          "GROVE_B"
+        ],
+        "side": "grove_b",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port B. GPIO / DAC2",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH9",
+        "dacChannel": "DAC2",
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO36",
+        "gpio": 36,
+        "aliases": [
+          "GROVE_B"
+        ],
+        "side": "grove_b",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port B. GPIO / ADC (input only)",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only \u2014 cannot be used as output"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO13",
+        "gpio": 13,
+        "aliases": [
+          "GROVE_C"
+        ],
+        "side": "grove_c",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port C. UART RX / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO14",
+        "gpio": 14,
+        "aliases": [
+          "GROVE_C"
+        ],
+        "side": "grove_c",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port C. UART TX / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO19",
+        "gpio": 19,
+        "aliases": [
+          "MISO"
+        ],
+        "side": "bottom",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": "MISO",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO25",
+        "gpio": 25,
+        "aliases": [
+          "DAC1"
+        ],
+        "side": "bottom",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH8",
+        "dacChannel": "DAC1",
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "GPIO26",
+        "gpio": 26,
+        "aliases": [
+          "DAC2"
+        ],
+        "side": "bottom",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH9",
+        "dacChannel": "DAC2",
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO27",
+        "gpio": 27,
+        "aliases": [],
+        "side": "bottom",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH7",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO35",
+        "gpio": 35,
+        "aliases": [],
+        "side": "bottom",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH7",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only \u2014 cannot be used as output"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "GPIO5",
+        "gpio": 5,
+        "aliases": [
+          "LCD_CS"
+        ],
+        "side": "internal",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": "Display SPI CS"
+      },
+      {
+        "physicalPin": 13,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [
+          "LCD_DC"
+        ],
+        "side": "internal",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": "Display DC"
+      },
+      {
+        "physicalPin": 14,
+        "name": "GPIO21",
+        "gpio": 21,
+        "aliases": [
+          "I2C_SDA"
+        ],
+        "side": "internal",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": "Internal I2C SDA"
+      },
+      {
+        "physicalPin": 15,
+        "name": "GPIO22",
+        "gpio": 22,
+        "aliases": [
+          "I2C_SCL"
+        ],
+        "side": "internal",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": "Internal I2C SCL"
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "Internal I2C",
+          "sda": 21,
+          "scl": 22
+        },
+        {
+          "name": "Port A",
+          "sda": 32,
+          "scl": 33
+        }
+      ],
+      "spi": [
+        {
+          "name": "Display/SD SPI",
+          "mosi": 23,
+          "miso": 38,
+          "sclk": 18,
+          "cs": 5
+        }
+      ],
+      "uart": [
+        {
+          "name": "Port C",
+          "tx": 14,
+          "rx": 13
+        }
+      ]
+    },
+    "bootPins": {},
+    "warnings": [
+      "Most GPIOs used internally \u2014 limited free pins",
+      "GPIO36/35 are input-only",
+      "ADC2 channels conflict with Wi-Fi",
+      "Internal I2C bus shared by PMU, IMU, RTC, touch",
+      "AXP192 controls power \u2014 improper config can brick device"
+    ],
+    "documentationUrl": "https://docs.m5stack.com/en/core/core2"
+  },
+  {
+    "id": "m5stack-cores3",
+    "name": "M5Stack CoreS3",
+    "variant": "ESP32-S3",
+    "manufacturer": "M5Stack",
+    "family": "ESP32-S3",
+    "chip": "ESP32-S3-WROOM-1-N16R8",
+    "description": "Latest gen M5Stack with ESP32-S3, 2-inch capacitive touch, camera, dual mic, proximity sensor",
+    "specs": {
+      "processor": "Dual-core Xtensa LX7 @ 240MHz",
+      "flash": "16MB",
+      "sram": "512KB",
+      "psram": "8MB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 5.0 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 8,
+      "adcChannels": 2,
+      "dacChannels": 0,
+      "uartPorts": 3,
+      "spiPorts": 1,
+      "i2cPorts": 2,
+      "pwmChannels": 8,
+      "totalPins": 10,
+      "battery": "500mAh"
+    },
+    "internalPeripherals": {
+      "display": {
+        "type": "IPS LCD 2.0\" 320x240",
+        "driver": "ILI9342C",
+        "interface": "SPI",
+        "pins": {
+          "cs": 3,
+          "dc": 35,
+          "sclk": 36,
+          "mosi": 37,
+          "backlight": -1
+        }
+      },
+      "touchscreen": {
+        "type": "Capacitive",
+        "driver": "FT6336U",
+        "interface": "I2C",
+        "pins": {
+          "sda": 12,
+          "scl": 11,
+          "int": 21
+        }
+      },
+      "camera": {
+        "type": "OV2640 0.3MP",
+        "interface": "DVP"
+      },
+      "imu": {
+        "type": "6-axis",
+        "driver": "BMI270",
+        "interface": "I2C",
+        "address": "0x68"
+      },
+      "magnetometer": {
+        "type": "BMM150",
+        "interface": "I2C",
+        "address": "0x10"
+      },
+      "pmu": {
+        "type": "Power management",
+        "driver": "AXP2101",
+        "interface": "I2C",
+        "address": "0x34"
+      },
+      "rtc": {
+        "type": "RTC",
+        "driver": "BM8563",
+        "interface": "I2C",
+        "address": "0x51"
+      },
+      "proximity": {
+        "type": "LTR-553ALS-01",
+        "interface": "I2C"
+      },
+      "speaker": {
+        "type": "I2S",
+        "driver": "AW88298"
+      },
+      "microphone": {
+        "type": "Dual ES7210 PDM",
+        "interface": "I2S"
+      },
+      "sdcard": {
+        "interface": "SPI"
+      }
+    },
+    "availableGPIOs": [
+      1,
+      2,
+      8,
+      9,
+      10,
+      17,
+      18
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [
+          "GROVE_A"
+        ],
+        "side": "grove_a",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port A. I2C SDA / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [
+          "GROVE_A"
+        ],
+        "side": "grove_a",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port A. I2C SCL / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO18",
+        "gpio": 18,
+        "aliases": [
+          "GROVE_B"
+        ],
+        "side": "grove_b",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port B. GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO17",
+        "gpio": 17,
+        "aliases": [
+          "GROVE_B"
+        ],
+        "side": "grove_b",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port B. GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO9",
+        "gpio": 9,
+        "aliases": [
+          "GROVE_C"
+        ],
+        "side": "grove_c",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port C. UART RX / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO10",
+        "gpio": 10,
+        "aliases": [
+          "GROVE_C"
+        ],
+        "side": "grove_c",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port C. UART TX / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO8",
+        "gpio": 8,
+        "aliases": [],
+        "side": "bottom",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Available via M-Bus.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO14",
+        "gpio": 14,
+        "aliases": [],
+        "side": "bottom",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": "Camera VSYNC"
+      },
+      {
+        "physicalPin": 9,
+        "name": "GPIO12",
+        "gpio": 12,
+        "aliases": [],
+        "side": "internal",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": "Touch I2C SDA"
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO11",
+        "gpio": 11,
+        "aliases": [],
+        "side": "internal",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": "Touch I2C SCL"
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "Port A",
+          "sda": 2,
+          "scl": 1
+        }
+      ],
+      "spi": [],
+      "uart": [
+        {
+          "name": "Port C",
+          "tx": 10,
+          "rx": 9
+        }
+      ]
+    },
+    "bootPins": {},
+    "warnings": [
+      "Very few free GPIOs \u2014 most used by internal peripherals",
+      "No DAC on ESP32-S3",
+      "Camera uses many GPIO pins internally",
+      "AXP2101 power management \u2014 handle with care"
+    ],
+    "documentationUrl": "https://docs.m5stack.com/en/core/CoreS3"
+  },
+  {
+    "id": "m5stickc-plus2",
+    "name": "M5StickC Plus2",
+    "variant": "ESP32-PICO-V3-02",
+    "manufacturer": "M5Stack",
+    "family": "ESP32",
+    "chip": "ESP32-PICO-V3-02",
+    "description": "Compact stick-form dev kit with 1.14\" LCD, IMU, RTC, mic, IR LED, and 200mAh battery",
+    "specs": {
+      "processor": "Dual-core Xtensa LX6 @ 240MHz",
+      "flash": "8MB",
+      "sram": "520KB",
+      "psram": "2MB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 4.2 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 6,
+      "adcChannels": 2,
+      "dacChannels": 1,
+      "uartPorts": 1,
+      "spiPorts": 0,
+      "i2cPorts": 1,
+      "pwmChannels": 16,
+      "totalPins": 8,
+      "battery": "200mAh"
+    },
+    "internalPeripherals": {
+      "display": {
+        "type": "LCD 1.14\" 135x240",
+        "driver": "ST7789V2",
+        "interface": "SPI",
+        "pins": {
+          "cs": 5,
+          "dc": 14,
+          "sclk": 18,
+          "mosi": 15,
+          "rst": 12
+        }
+      },
+      "imu": {
+        "type": "6-axis",
+        "driver": "MPU6886",
+        "interface": "I2C",
+        "address": "0x68"
+      },
+      "pmu": {
+        "type": "Power management",
+        "driver": "AXP2101",
+        "interface": "I2C"
+      },
+      "rtc": {
+        "type": "RTC",
+        "driver": "BM8563",
+        "interface": "I2C",
+        "address": "0x51"
+      },
+      "microphone": {
+        "type": "PDM",
+        "driver": "SPM1423",
+        "pins": {
+          "clk": 0,
+          "data": 34
+        }
+      },
+      "ir_led": {
+        "pin": 19
+      },
+      "buzzer": {
+        "pin": 2
+      },
+      "button_a": {
+        "pin": 37
+      },
+      "button_b": {
+        "pin": 39
+      },
+      "led": {
+        "pin": 19
+      }
+    },
+    "availableGPIOs": [
+      25,
+      26,
+      32,
+      33,
+      36
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO32",
+        "gpio": 32,
+        "aliases": [
+          "GROVE_A"
+        ],
+        "side": "grove",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port A. I2C SDA / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO33",
+        "gpio": 33,
+        "aliases": [
+          "GROVE_A"
+        ],
+        "side": "grove",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port A. I2C SCL / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO25",
+        "gpio": 25,
+        "aliases": [
+          "DAC1"
+        ],
+        "side": "hat",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Hat connector. DAC output.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH8",
+        "dacChannel": "DAC1",
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO26",
+        "gpio": 26,
+        "aliases": [
+          "DAC2"
+        ],
+        "side": "hat",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Hat connector. DAC output.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH9",
+        "dacChannel": "DAC2",
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO36",
+        "gpio": 36,
+        "aliases": [],
+        "side": "hat",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Hat connector. Input only.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "hat",
+        "position": 4,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "hat",
+        "position": 5,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "hat",
+        "position": 6,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "Grove Port A",
+          "sda": 32,
+          "scl": 33
+        }
+      ],
+      "spi": [],
+      "uart": []
+    },
+    "bootPins": {},
+    "warnings": [
+      "Very limited free GPIOs",
+      "GPIO36 is input-only",
+      "ADC2 channels conflict with Wi-Fi",
+      "Small battery (200mAh) \u2014 limited runtime",
+      "AXP2101 controls power"
+    ],
+    "documentationUrl": "https://docs.m5stack.com/en/core/M5StickC%20PLUS2"
+  },
+  {
+    "id": "m5stack-atom-lite",
+    "name": "M5Stack Atom Lite",
+    "variant": "24x24mm",
+    "manufacturer": "M5Stack",
+    "family": "ESP32",
+    "chip": "ESP32-PICO-D4",
+    "description": "Ultra-compact (24x24mm) ESP32 dev kit with RGB LED, button, and Grove connector",
+    "specs": {
+      "processor": "Dual-core Xtensa LX6 @ 240MHz",
+      "flash": "4MB",
+      "sram": "520KB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 4.2 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 8,
+      "adcChannels": 4,
+      "dacChannels": 2,
+      "uartPorts": 1,
+      "spiPorts": 0,
+      "i2cPorts": 1,
+      "pwmChannels": 16,
+      "totalPins": 12
+    },
+    "internalPeripherals": {
+      "rgb_led": {
+        "type": "WS2812",
+        "pin": 27,
+        "count": 1
+      },
+      "button": {
+        "pin": 39
+      },
+      "ir_led": {
+        "pin": 12
+      }
+    },
+    "availableGPIOs": [
+      19,
+      21,
+      22,
+      23,
+      25,
+      26,
+      32,
+      33
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO26",
+        "gpio": 26,
+        "aliases": [
+          "GROVE_A"
+        ],
+        "side": "grove",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port A. I2C SDA / GPIO / DAC2",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH9",
+        "dacChannel": "DAC2",
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO32",
+        "gpio": 32,
+        "aliases": [
+          "GROVE_A"
+        ],
+        "side": "grove",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port A. I2C SCL / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO19",
+        "gpio": 19,
+        "aliases": [],
+        "side": "bottom",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Available GPIO.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO22",
+        "gpio": 22,
+        "aliases": [],
+        "side": "bottom",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO23",
+        "gpio": 23,
+        "aliases": [],
+        "side": "bottom",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO33",
+        "gpio": 33,
+        "aliases": [],
+        "side": "bottom",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO21",
+        "gpio": 21,
+        "aliases": [],
+        "side": "bottom",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO25",
+        "gpio": 25,
+        "aliases": [
+          "DAC1"
+        ],
+        "side": "bottom",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH8",
+        "dacChannel": "DAC1",
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "bottom",
+        "position": 7,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "bottom",
+        "position": 8,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "bottom",
+        "position": 9,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "bottom",
+        "position": 10,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "Grove",
+          "sda": 26,
+          "scl": 32
+        }
+      ],
+      "spi": [],
+      "uart": []
+    },
+    "bootPins": {},
+    "warnings": [
+      "Very small \u2014 limited GPIO",
+      "GPIO27 used by RGB LED",
+      "GPIO12 used by IR LED",
+      "GPIO39 used by button (input only)",
+      "ADC2 channels conflict with Wi-Fi"
+    ],
+    "documentationUrl": "https://docs.m5stack.com/en/core/ATOM%20Lite"
+  },
+  {
+    "id": "m5stack-atoms3-lite",
+    "name": "M5Stack AtomS3 Lite",
+    "variant": "24x24mm ESP32-S3",
+    "manufacturer": "M5Stack",
+    "family": "ESP32-S3",
+    "chip": "ESP32-S3FN8",
+    "description": "Ultra-compact ESP32-S3 with RGB LED, button, Grove, and 8MB flash",
+    "specs": {
+      "processor": "Dual-core Xtensa LX7 @ 240MHz",
+      "flash": "8MB",
+      "sram": "512KB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 5.0 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 8,
+      "adcChannels": 4,
+      "dacChannels": 0,
+      "uartPorts": 1,
+      "spiPorts": 0,
+      "i2cPorts": 1,
+      "pwmChannels": 8,
+      "totalPins": 12
+    },
+    "internalPeripherals": {
+      "rgb_led": {
+        "type": "WS2812",
+        "pin": 35,
+        "count": 1
+      },
+      "button": {
+        "pin": 41
+      },
+      "ir_led": {
+        "pin": 4
+      }
+    },
+    "availableGPIOs": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8,
+      38,
+      39
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [
+          "GROVE_A"
+        ],
+        "side": "grove",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port A. I2C SDA / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [
+          "GROVE_A"
+        ],
+        "side": "grove",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Grove Port A. I2C SCL / GPIO",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO5",
+        "gpio": 5,
+        "aliases": [],
+        "side": "bottom",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO6",
+        "gpio": 6,
+        "aliases": [],
+        "side": "bottom",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO7",
+        "gpio": 7,
+        "aliases": [],
+        "side": "bottom",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH6",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO8",
+        "gpio": 8,
+        "aliases": [],
+        "side": "bottom",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH7",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO38",
+        "gpio": 38,
+        "aliases": [],
+        "side": "bottom",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO39",
+        "gpio": 39,
+        "aliases": [],
+        "side": "bottom",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "bottom",
+        "position": 7,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "bottom",
+        "position": 8,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "bottom",
+        "position": 9,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "bottom",
+        "position": 10,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "Grove",
+          "sda": 2,
+          "scl": 1
+        }
+      ],
+      "spi": [],
+      "uart": []
+    },
+    "bootPins": {},
+    "warnings": [
+      "No DAC on ESP32-S3",
+      "GPIO35 used by RGB LED",
+      "GPIO41 used by button",
+      "GPIO4 used by IR LED",
+      "Very limited GPIO"
+    ],
+    "documentationUrl": "https://docs.m5stack.com/en/core/AtomS3%20Lite"
+  },
+  {
+    "id": "m5stack-stamp-s3",
+    "name": "M5Stack Stamp S3",
+    "variant": "Castellated",
+    "manufacturer": "M5Stack",
+    "family": "ESP32-S3",
+    "chip": "ESP32-S3FN8",
+    "description": "Compact castellated ESP32-S3 module with RGB LED, button, and exposed GPIOs",
+    "specs": {
+      "processor": "Dual-core Xtensa LX7 @ 240MHz",
+      "flash": "8MB",
+      "sram": "512KB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 5.0 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 14,
+      "adcChannels": 8,
+      "dacChannels": 0,
+      "uartPorts": 3,
+      "spiPorts": 2,
+      "i2cPorts": 2,
+      "pwmChannels": 8,
+      "totalPins": 22
+    },
+    "internalPeripherals": {
+      "rgb_led": {
+        "type": "WS2812",
+        "pin": 21,
+        "count": 1
+      },
+      "button": {
+        "pin": 0
+      }
+    },
+    "availableGPIOs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      43,
+      44,
+      46
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 1,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 2,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [],
+        "side": "left",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO3",
+        "gpio": 3,
+        "aliases": [],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH2",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO4",
+        "gpio": 4,
+        "aliases": [],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH3",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO5",
+        "gpio": 5,
+        "aliases": [],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO6",
+        "gpio": 6,
+        "aliases": [],
+        "side": "left",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "GPIO7",
+        "gpio": 7,
+        "aliases": [],
+        "side": "left",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH6",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO8",
+        "gpio": 8,
+        "aliases": [],
+        "side": "left",
+        "position": 10,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH7",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO9",
+        "gpio": 9,
+        "aliases": [],
+        "side": "left",
+        "position": 11,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 1,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 13,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 2,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 14,
+        "name": "GPIO46",
+        "gpio": 46,
+        "aliases": [],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Strapping pin.",
+        "safeForGeneral": false,
+        "bootMode": "Strapping",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 15,
+        "name": "GPIO43",
+        "gpio": 43,
+        "aliases": [
+          "TX"
+        ],
+        "side": "right",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 16,
+        "name": "GPIO44",
+        "gpio": 44,
+        "aliases": [
+          "RX"
+        ],
+        "side": "right",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 17,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [],
+        "side": "right",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 18,
+        "name": "GPIO14",
+        "gpio": 14,
+        "aliases": [],
+        "side": "right",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 19,
+        "name": "GPIO13",
+        "gpio": 13,
+        "aliases": [],
+        "side": "right",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 20,
+        "name": "GPIO12",
+        "gpio": 12,
+        "aliases": [],
+        "side": "right",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 21,
+        "name": "GPIO11",
+        "gpio": 11,
+        "aliases": [],
+        "side": "right",
+        "position": 10,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 22,
+        "name": "GPIO10",
+        "gpio": 10,
+        "aliases": [],
+        "side": "right",
+        "position": 11,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 13,
+          "scl": 15
+        }
+      ],
+      "spi": [],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 43,
+          "rx": 44
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO0": "Strapping pin (button)",
+      "GPIO46": "Strapping pin"
+    },
+    "warnings": [
+      "No DAC on ESP32-S3",
+      "GPIO21 used by RGB LED",
+      "GPIO0 connected to button (strapping pin)"
+    ],
+    "documentationUrl": "https://docs.m5stack.com/en/core/StampS3"
+  },
+  {
+    "id": "lilygo-t-display",
+    "name": "LilyGo T-Display",
+    "variant": "ESP32 1.14\" TFT",
+    "manufacturer": "LilyGo",
+    "family": "ESP32",
+    "chip": "ESP32-D0WDQ6",
+    "description": "ESP32 board with built-in 1.14\" IPS display, two buttons, and battery charging",
+    "specs": {
+      "processor": "Dual-core Xtensa LX6 @ 240MHz",
+      "flash": "4MB",
+      "sram": "520KB",
+      "psram": "8MB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 4.2 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 14,
+      "adcChannels": 6,
+      "dacChannels": 2,
+      "uartPorts": 3,
+      "spiPorts": 1,
+      "i2cPorts": 2,
+      "pwmChannels": 16,
+      "totalPins": 20
+    },
+    "internalPeripherals": {
+      "display": {
+        "type": "TFT 1.14\" 135x240",
+        "driver": "ST7789V",
+        "interface": "SPI",
+        "pins": {
+          "cs": 5,
+          "dc": 16,
+          "sclk": 18,
+          "mosi": 19,
+          "rst": 23,
+          "backlight": 4
+        }
+      },
+      "button_a": {
+        "pin": 0,
+        "label": "Left button (BOOT)"
+      },
+      "button_b": {
+        "pin": 35,
+        "label": "Right button"
+      },
+      "battery_adc": {
+        "pin": 34,
+        "notes": "Battery voltage via divider"
+      }
+    },
+    "availableGPIOs": [
+      2,
+      12,
+      13,
+      15,
+      17,
+      21,
+      22,
+      25,
+      26,
+      27,
+      32,
+      33
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO21",
+        "gpio": 21,
+        "aliases": [
+          "SDA"
+        ],
+        "side": "left",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO22",
+        "gpio": 22,
+        "aliases": [
+          "SCL"
+        ],
+        "side": "left",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO17",
+        "gpio": 17,
+        "aliases": [
+          "TX2"
+        ],
+        "side": "left",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART2_TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Strapping pin. LED on some variants.",
+        "safeForGeneral": false,
+        "bootMode": "Strapping pin",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Strapping pin.",
+        "safeForGeneral": true,
+        "bootMode": "Strapping pin",
+        "adcChannel": "ADC2_CH3",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO13",
+        "gpio": 13,
+        "aliases": [],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO12",
+        "gpio": 12,
+        "aliases": [],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Strapping pin \u2014 flash voltage.",
+        "safeForGeneral": false,
+        "bootMode": "Strapping pin",
+        "adcChannel": "ADC2_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin \u2014 flash voltage"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 8,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 9,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [
+          "VIN"
+        ],
+        "side": "left",
+        "position": 10,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO25",
+        "gpio": 25,
+        "aliases": [
+          "DAC1"
+        ],
+        "side": "right",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH8",
+        "dacChannel": "DAC1",
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "GPIO26",
+        "gpio": 26,
+        "aliases": [
+          "DAC2"
+        ],
+        "side": "right",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH9",
+        "dacChannel": "DAC2",
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 13,
+        "name": "GPIO27",
+        "gpio": 27,
+        "aliases": [],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH7",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 14,
+        "name": "GPIO33",
+        "gpio": 33,
+        "aliases": [],
+        "side": "right",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 15,
+        "name": "GPIO32",
+        "gpio": 32,
+        "aliases": [],
+        "side": "right",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 16,
+        "name": "GPIO36",
+        "gpio": 36,
+        "aliases": [
+          "VP"
+        ],
+        "side": "right",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Input only.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 17,
+        "name": "GPIO39",
+        "gpio": 39,
+        "aliases": [
+          "VN"
+        ],
+        "side": "right",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Input only.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH3",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 18,
+        "name": "GPIO37",
+        "gpio": 37,
+        "aliases": [],
+        "side": "right",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Input only. Not on all board revisions.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 19,
+        "name": "GPIO38",
+        "gpio": 38,
+        "aliases": [],
+        "side": "right",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Input only. Not on all board revisions.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH2",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 20,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 10,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 21,
+          "scl": 22
+        }
+      ],
+      "spi": [],
+      "uart": [
+        {
+          "name": "UART2",
+          "tx": 17,
+          "rx": -1
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO0": "Boot button",
+      "GPIO2": "Strapping",
+      "GPIO12": "Flash voltage"
+    },
+    "warnings": [
+      "Display uses GPIO4, 5, 16, 18, 19, 23 \u2014 these are NOT available",
+      "GPIO0 is BOOT button",
+      "GPIO35 is right button (input only)",
+      "GPIO34 used for battery ADC (input only)",
+      "ADC2 channels conflict with Wi-Fi"
+    ],
+    "documentationUrl": "https://github.com/Xinyuan-LilyGO/TTGO-T-Display"
+  },
+  {
+    "id": "lilygo-t-display-s3",
+    "name": "LilyGo T-Display S3",
+    "variant": "ESP32-S3 1.9\" TFT",
+    "manufacturer": "LilyGo",
+    "family": "ESP32-S3",
+    "chip": "ESP32-S3R8",
+    "description": "ESP32-S3 board with 1.9\" ST7789 TFT display, touch variant available, 16MB flash + 8MB PSRAM",
+    "specs": {
+      "processor": "Dual-core Xtensa LX7 @ 240MHz",
+      "flash": "16MB",
+      "sram": "512KB",
+      "psram": "8MB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 5.0 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 12,
+      "adcChannels": 6,
+      "dacChannels": 0,
+      "uartPorts": 3,
+      "spiPorts": 1,
+      "i2cPorts": 2,
+      "pwmChannels": 8,
+      "totalPins": 16
+    },
+    "internalPeripherals": {
+      "display": {
+        "type": "TFT 1.9\" 170x320",
+        "driver": "ST7789",
+        "interface": "8-bit parallel",
+        "pins": {
+          "cs": 6,
+          "dc": 7,
+          "wr": 8,
+          "rd": 9,
+          "backlight": 38,
+          "d0": 39,
+          "d1": 40,
+          "d2": 41,
+          "d3": 42,
+          "d4": 45,
+          "d5": 46,
+          "d6": 47,
+          "d7": 48
+        }
+      },
+      "button_a": {
+        "pin": 0,
+        "label": "BOOT button"
+      },
+      "button_b": {
+        "pin": 14,
+        "label": "Custom button"
+      },
+      "battery_adc": {
+        "pin": 4,
+        "notes": "Battery voltage via divider"
+      }
+    },
+    "availableGPIOs": [
+      1,
+      2,
+      3,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      21,
+      43,
+      44
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [],
+        "side": "left",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [],
+        "side": "left",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO3",
+        "gpio": 3,
+        "aliases": [],
+        "side": "left",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH2",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO10",
+        "gpio": 10,
+        "aliases": [],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO11",
+        "gpio": 11,
+        "aliases": [],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO12",
+        "gpio": 12,
+        "aliases": [],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO13",
+        "gpio": 13,
+        "aliases": [],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [],
+        "side": "left",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "GPIO43",
+        "gpio": 43,
+        "aliases": [
+          "TX"
+        ],
+        "side": "right",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO44",
+        "gpio": 44,
+        "aliases": [
+          "RX"
+        ],
+        "side": "right",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO18",
+        "gpio": 18,
+        "aliases": [],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "GPIO17",
+        "gpio": 17,
+        "aliases": [],
+        "side": "right",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 13,
+        "name": "GPIO16",
+        "gpio": 16,
+        "aliases": [],
+        "side": "right",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 14,
+        "name": "GPIO21",
+        "gpio": 21,
+        "aliases": [],
+        "side": "right",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 15,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 7,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 16,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 8,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 43,
+          "scl": 44
+        }
+      ],
+      "spi": [],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 43,
+          "rx": 44
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO0": "Boot button"
+    },
+    "warnings": [
+      "Display uses 8-bit parallel \u2014 consumes many GPIOs (6-9, 38-42, 45-48)",
+      "No DAC on ESP32-S3",
+      "GPIO0 is BOOT button",
+      "GPIO14 is custom button"
+    ],
+    "documentationUrl": "https://github.com/Xinyuan-LilyGO/T-Display-S3"
+  },
+  {
+    "id": "lilygo-t-beam",
+    "name": "LilyGo T-Beam",
+    "variant": "ESP32 + GPS + LoRa",
+    "manufacturer": "LilyGo",
+    "family": "ESP32",
+    "chip": "ESP32-D0WDQ6",
+    "description": "ESP32 board with GPS (NEO-6M/8M), LoRa (SX1276/SX1262), OLED, and 18650 battery holder",
+    "specs": {
+      "processor": "Dual-core Xtensa LX6 @ 240MHz",
+      "flash": "4MB",
+      "sram": "520KB",
+      "psram": "8MB",
+      "wireless": "Wi-Fi, BLE 4.2, LoRa (868/915MHz), GPS",
+      "voltage": "3.3V logic, 5V USB or 18650 battery",
+      "gpioCount": 10,
+      "adcChannels": 4,
+      "dacChannels": 2,
+      "uartPorts": 3,
+      "spiPorts": 1,
+      "i2cPorts": 2,
+      "pwmChannels": 16,
+      "totalPins": 14
+    },
+    "internalPeripherals": {
+      "gps": {
+        "type": "u-blox NEO-6M/8M",
+        "interface": "UART",
+        "pins": {
+          "tx": 34,
+          "rx": 12
+        }
+      },
+      "lora": {
+        "type": "SX1276 or SX1262",
+        "interface": "SPI",
+        "pins": {
+          "cs": 18,
+          "rst": 23,
+          "dio0": 26,
+          "sclk": 5,
+          "mosi": 27,
+          "miso": 19
+        }
+      },
+      "pmu": {
+        "type": "AXP192",
+        "interface": "I2C",
+        "pins": {
+          "sda": 21,
+          "scl": 22
+        }
+      },
+      "button": {
+        "pin": 38,
+        "label": "User button"
+      }
+    },
+    "availableGPIOs": [
+      2,
+      4,
+      13,
+      14,
+      15,
+      25,
+      32,
+      33,
+      35,
+      36,
+      39
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [],
+        "side": "left",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Strapping pin.",
+        "safeForGeneral": false,
+        "bootMode": "Strapping",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO4",
+        "gpio": 4,
+        "aliases": [],
+        "side": "left",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO13",
+        "gpio": 13,
+        "aliases": [],
+        "side": "left",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO14",
+        "gpio": 14,
+        "aliases": [],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH6",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH3",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO25",
+        "gpio": 25,
+        "aliases": [
+          "DAC1"
+        ],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH8",
+        "dacChannel": "DAC1",
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO32",
+        "gpio": 32,
+        "aliases": [],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO33",
+        "gpio": 33,
+        "aliases": [],
+        "side": "right",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "GPIO35",
+        "gpio": 35,
+        "aliases": [],
+        "side": "right",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Input only.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH7",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO36",
+        "gpio": 36,
+        "aliases": [
+          "VP"
+        ],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Input only.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO39",
+        "gpio": 39,
+        "aliases": [
+          "VN"
+        ],
+        "side": "right",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Input only.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH3",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 5,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 13,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 6,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 14,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 7,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 21,
+          "scl": 22
+        }
+      ],
+      "spi": [
+        {
+          "name": "LoRa SPI",
+          "mosi": 27,
+          "miso": 19,
+          "sclk": 5,
+          "cs": 18
+        }
+      ],
+      "uart": [
+        {
+          "name": "GPS UART",
+          "tx": 12,
+          "rx": 34
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO0": "Boot",
+      "GPIO2": "Strapping"
+    },
+    "warnings": [
+      "Many GPIOs used by GPS, LoRa, and PMU",
+      "GPIO12 used by GPS \u2014 flash voltage strapping conflict possible",
+      "ADC2 channels conflict with Wi-Fi",
+      "18650 battery holder \u2014 correct polarity critical"
+    ],
+    "documentationUrl": "https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series"
+  },
+  {
+    "id": "lilygo-t-beam-s3",
+    "name": "LilyGo T-Beam S3",
+    "variant": "ESP32-S3 + GPS + LoRa",
+    "manufacturer": "LilyGo",
+    "family": "ESP32-S3",
+    "chip": "ESP32-S3",
+    "description": "ESP32-S3 board with GPS, LoRa (SX1262), 18650 battery, and OLED support",
+    "specs": {
+      "processor": "Dual-core Xtensa LX7 @ 240MHz",
+      "flash": "16MB",
+      "sram": "512KB",
+      "psram": "8MB",
+      "wireless": "Wi-Fi, BLE 5.0, LoRa (868/915MHz), GPS",
+      "voltage": "3.3V logic, 5V USB or 18650 battery",
+      "gpioCount": 8,
+      "adcChannels": 2,
+      "dacChannels": 0,
+      "uartPorts": 3,
+      "spiPorts": 1,
+      "i2cPorts": 2,
+      "pwmChannels": 8,
+      "totalPins": 12
+    },
+    "internalPeripherals": {
+      "gps": {
+        "type": "L76K",
+        "interface": "UART"
+      },
+      "lora": {
+        "type": "SX1262",
+        "interface": "SPI"
+      },
+      "pmu": {
+        "type": "AXP2101",
+        "interface": "I2C"
+      },
+      "button": {
+        "pin": 0,
+        "label": "BOOT button"
+      }
+    },
+    "availableGPIOs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      43,
+      44
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [],
+        "side": "left",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [],
+        "side": "left",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO3",
+        "gpio": 3,
+        "aliases": [],
+        "side": "left",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO4",
+        "gpio": 4,
+        "aliases": [],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO5",
+        "gpio": 5,
+        "aliases": [],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO6",
+        "gpio": 6,
+        "aliases": [],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO7",
+        "gpio": 7,
+        "aliases": [],
+        "side": "right",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO43",
+        "gpio": 43,
+        "aliases": [
+          "TX"
+        ],
+        "side": "right",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "GPIO44",
+        "gpio": 44,
+        "aliases": [
+          "RX"
+        ],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 4,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 5,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 6,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 17,
+          "scl": 18
+        }
+      ],
+      "spi": [],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 43,
+          "rx": 44
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO0": "Boot button"
+    },
+    "warnings": [
+      "Many GPIOs used by GPS, LoRa, and PMU internally",
+      "No DAC on ESP32-S3",
+      "18650 battery \u2014 correct polarity critical"
+    ],
+    "documentationUrl": "https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series"
+  },
+  {
+    "id": "lilygo-t-dongle-s3",
+    "name": "LilyGo T-Dongle S3",
+    "variant": "USB-A ESP32-S3 + 0.96\" LCD",
+    "manufacturer": "LilyGo",
+    "family": "ESP32-S3",
+    "chip": "ESP32-S3",
+    "description": "USB-A stick form factor ESP32-S3 with 0.96\" LCD display and APA102 LED",
+    "specs": {
+      "processor": "Dual-core Xtensa LX7 @ 240MHz",
+      "flash": "16MB",
+      "sram": "512KB",
+      "psram": "8MB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 5.0 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 6,
+      "adcChannels": 2,
+      "dacChannels": 0,
+      "uartPorts": 1,
+      "spiPorts": 0,
+      "i2cPorts": 1,
+      "pwmChannels": 8,
+      "totalPins": 10
+    },
+    "internalPeripherals": {
+      "display": {
+        "type": "LCD 0.96\" 80x160",
+        "driver": "ST7735",
+        "interface": "SPI",
+        "pins": {
+          "cs": 4,
+          "dc": 2,
+          "sclk": 5,
+          "mosi": 3,
+          "rst": 1,
+          "backlight": 38
+        }
+      },
+      "led": {
+        "type": "APA102",
+        "pins": {
+          "data": 40,
+          "clk": 39
+        },
+        "count": 1
+      },
+      "button": {
+        "pin": 0,
+        "label": "BOOT"
+      }
+    },
+    "availableGPIOs": [
+      18,
+      15,
+      16,
+      17,
+      43,
+      44
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO43",
+        "gpio": 43,
+        "aliases": [
+          "TX"
+        ],
+        "side": "header",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO44",
+        "gpio": 44,
+        "aliases": [
+          "RX"
+        ],
+        "side": "header",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO18",
+        "gpio": 18,
+        "aliases": [],
+        "side": "header",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO17",
+        "gpio": 17,
+        "aliases": [],
+        "side": "header",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO16",
+        "gpio": 16,
+        "aliases": [],
+        "side": "header",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [],
+        "side": "header",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "header",
+        "position": 7,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "header",
+        "position": 8,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "header",
+        "position": 9,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "header",
+        "position": 10,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 18,
+          "scl": 17
+        }
+      ],
+      "spi": [],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 43,
+          "rx": 44
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO0": "Boot button"
+    },
+    "warnings": [
+      "USB-A form factor \u2014 no USB-C",
+      "Very limited free GPIOs",
+      "Display uses GPIO1-5, 38 internally",
+      "No DAC on ESP32-S3"
+    ],
+    "documentationUrl": "https://github.com/Xinyuan-LilyGO/T-Dongle-S3"
+  },
+  {
+    "id": "waveshare-esp32-s3-zero",
+    "name": "Waveshare ESP32-S3-Zero",
+    "variant": "Castellated compact",
+    "manufacturer": "Waveshare",
+    "family": "ESP32-S3",
+    "chip": "ESP32-S3FH4R2",
+    "description": "Ultra-compact ESP32-S3 board with castellated pins, 4MB flash + 2MB PSRAM, WS2812 LED",
+    "specs": {
+      "processor": "Dual-core Xtensa LX7 @ 240MHz",
+      "flash": "4MB",
+      "sram": "512KB",
+      "psram": "2MB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 5.0 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 18,
+      "adcChannels": 10,
+      "dacChannels": 0,
+      "uartPorts": 3,
+      "spiPorts": 2,
+      "i2cPorts": 2,
+      "pwmChannels": 8,
+      "totalPins": 24
+    },
+    "internalPeripherals": {
+      "rgb_led": {
+        "type": "WS2812",
+        "pin": 21,
+        "count": 1
+      }
+    },
+    "availableGPIOs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 1,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 2,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 3,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO0",
+        "gpio": 0,
+        "aliases": [],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Strapping pin.",
+        "safeForGeneral": false,
+        "bootMode": "Strapping",
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO3",
+        "gpio": 3,
+        "aliases": [],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "Strapping pin.",
+        "safeForGeneral": false,
+        "bootMode": "Strapping",
+        "adcChannel": "ADC1_CH2",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO4",
+        "gpio": 4,
+        "aliases": [],
+        "side": "left",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH3",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "GPIO5",
+        "gpio": 5,
+        "aliases": [],
+        "side": "left",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO6",
+        "gpio": 6,
+        "aliases": [],
+        "side": "left",
+        "position": 10,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO7",
+        "gpio": 7,
+        "aliases": [],
+        "side": "left",
+        "position": 11,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH6",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "GPIO8",
+        "gpio": 8,
+        "aliases": [],
+        "side": "left",
+        "position": 12,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH7",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 13,
+        "name": "GPIO9",
+        "gpio": 9,
+        "aliases": [],
+        "side": "right",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 14,
+        "name": "GPIO10",
+        "gpio": 10,
+        "aliases": [],
+        "side": "right",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 15,
+        "name": "GPIO11",
+        "gpio": 11,
+        "aliases": [],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 16,
+        "name": "GPIO12",
+        "gpio": 12,
+        "aliases": [],
+        "side": "right",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 17,
+        "name": "GPIO13",
+        "gpio": 13,
+        "aliases": [],
+        "side": "right",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 18,
+        "name": "GPIO14",
+        "gpio": 14,
+        "aliases": [],
+        "side": "right",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 19,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [],
+        "side": "right",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 20,
+        "name": "GPIO16",
+        "gpio": 16,
+        "aliases": [],
+        "side": "right",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 21,
+        "name": "GPIO17",
+        "gpio": 17,
+        "aliases": [],
+        "side": "right",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 22,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 10,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 23,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 11,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 24,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 12,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 8,
+          "scl": 9
+        }
+      ],
+      "spi": [
+        {
+          "name": "SPI2",
+          "mosi": 11,
+          "miso": 13,
+          "sclk": 12,
+          "cs": 10
+        }
+      ],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 43,
+          "rx": 44
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO0": "Strapping",
+      "GPIO3": "Strapping",
+      "GPIO45": "Strapping",
+      "GPIO46": "Strapping"
+    },
+    "warnings": [
+      "No DAC on ESP32-S3",
+      "GPIO21 used by WS2812 LED",
+      "Castellated pins \u2014 good for SMD, needs headers for breadboard"
+    ],
+    "documentationUrl": "https://www.waveshare.com/esp32-s3-zero.htm"
+  },
+  {
+    "id": "waveshare-esp32-s3-pico",
+    "name": "Waveshare ESP32-S3-Pico",
+    "variant": "Pico form factor",
+    "manufacturer": "Waveshare",
+    "family": "ESP32-S3",
+    "chip": "ESP32-S3",
+    "description": "ESP32-S3 in Pico form factor with 16MB flash + 8MB PSRAM and extensive GPIO breakout",
+    "specs": {
+      "processor": "Dual-core Xtensa LX7 @ 240MHz",
+      "flash": "16MB",
+      "sram": "512KB",
+      "psram": "8MB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 5.0 + BLE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 22,
+      "adcChannels": 10,
+      "dacChannels": 0,
+      "uartPorts": 3,
+      "spiPorts": 2,
+      "i2cPorts": 2,
+      "pwmChannels": 8,
+      "totalPins": 30
+    },
+    "internalPeripherals": {
+      "rgb_led": {
+        "type": "WS2812",
+        "pin": 47,
+        "count": 1
+      }
+    },
+    "availableGPIOs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      21,
+      43,
+      44
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 1,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 2,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 3,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO0",
+        "gpio": 0,
+        "aliases": [],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": "Strapping",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO3",
+        "gpio": 3,
+        "aliases": [],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": "Strapping",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO4",
+        "gpio": 4,
+        "aliases": [],
+        "side": "left",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH3",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "GPIO5",
+        "gpio": 5,
+        "aliases": [],
+        "side": "left",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO6",
+        "gpio": 6,
+        "aliases": [],
+        "side": "left",
+        "position": 10,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO7",
+        "gpio": 7,
+        "aliases": [],
+        "side": "left",
+        "position": 11,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH6",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "GPIO8",
+        "gpio": 8,
+        "aliases": [],
+        "side": "left",
+        "position": 12,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH7",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 13,
+        "name": "GPIO9",
+        "gpio": 9,
+        "aliases": [],
+        "side": "left",
+        "position": 13,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 14,
+        "name": "GPIO10",
+        "gpio": 10,
+        "aliases": [],
+        "side": "left",
+        "position": 14,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 15,
+        "name": "GPIO11",
+        "gpio": 11,
+        "aliases": [],
+        "side": "left",
+        "position": 15,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 16,
+        "name": "GPIO12",
+        "gpio": 12,
+        "aliases": [],
+        "side": "right",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 17,
+        "name": "GPIO13",
+        "gpio": 13,
+        "aliases": [],
+        "side": "right",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 18,
+        "name": "GPIO14",
+        "gpio": 14,
+        "aliases": [],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 19,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [],
+        "side": "right",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 20,
+        "name": "GPIO16",
+        "gpio": 16,
+        "aliases": [],
+        "side": "right",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 21,
+        "name": "GPIO17",
+        "gpio": 17,
+        "aliases": [],
+        "side": "right",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 22,
+        "name": "GPIO18",
+        "gpio": 18,
+        "aliases": [],
+        "side": "right",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 23,
+        "name": "GPIO21",
+        "gpio": 21,
+        "aliases": [],
+        "side": "right",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 24,
+        "name": "GPIO43",
+        "gpio": 43,
+        "aliases": [
+          "TX"
+        ],
+        "side": "right",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 25,
+        "name": "GPIO44",
+        "gpio": 44,
+        "aliases": [
+          "RX"
+        ],
+        "side": "right",
+        "position": 10,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 26,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 11,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 27,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 12,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 28,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 13,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 29,
+        "name": "RST",
+        "gpio": null,
+        "aliases": [
+          "EN"
+        ],
+        "side": "right",
+        "position": 14,
+        "type": "control",
+        "functions": [
+          "RST"
+        ],
+        "notes": "Active HIGH enable.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": true,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 30,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 15,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 8,
+          "scl": 9
+        }
+      ],
+      "spi": [
+        {
+          "name": "SPI2",
+          "mosi": 11,
+          "miso": 13,
+          "sclk": 12,
+          "cs": 10
+        }
+      ],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 43,
+          "rx": 44
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO0": "Strapping",
+      "GPIO3": "Strapping"
+    },
+    "warnings": [
+      "No DAC on ESP32-S3",
+      "GPIO47 used by WS2812 LED"
+    ],
+    "documentationUrl": "https://www.waveshare.com/esp32-s3-pico.htm"
+  },
+  {
+    "id": "waveshare-esp32-c6-pico",
+    "name": "Waveshare ESP32-C6-Pico",
+    "variant": "Pico form factor",
+    "manufacturer": "Waveshare",
+    "family": "ESP32-C6",
+    "chip": "ESP32-C6",
+    "description": "ESP32-C6 in Pico form factor with Wi-Fi 6, BLE 5, Zigbee/Thread support",
+    "specs": {
+      "processor": "Single-core RISC-V @ 160MHz",
+      "flash": "4MB",
+      "sram": "512KB",
+      "wireless": "Wi-Fi 6 (802.11ax), Bluetooth 5.0 + BLE, 802.15.4 (Zigbee/Thread)",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 18,
+      "adcChannels": 7,
+      "dacChannels": 0,
+      "uartPorts": 2,
+      "spiPorts": 1,
+      "i2cPorts": 2,
+      "pwmChannels": 6,
+      "totalPins": 24
+    },
+    "internalPeripherals": {
+      "rgb_led": {
+        "type": "WS2812",
+        "pin": 8,
+        "count": 1
+      }
+    },
+    "availableGPIOs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      15,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 1,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 2,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 2,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 3,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 3,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO0",
+        "gpio": 0,
+        "aliases": [],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH2",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO3",
+        "gpio": 3,
+        "aliases": [],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH3",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO4",
+        "gpio": 4,
+        "aliases": [
+          "MTMS"
+        ],
+        "side": "left",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": "Strapping",
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 9,
+        "name": "GPIO5",
+        "gpio": 5,
+        "aliases": [
+          "MTDI"
+        ],
+        "side": "left",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": "Strapping",
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO6",
+        "gpio": 6,
+        "aliases": [
+          "SDA"
+        ],
+        "side": "left",
+        "position": 10,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH6",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO7",
+        "gpio": 7,
+        "aliases": [
+          "SCL"
+        ],
+        "side": "left",
+        "position": 11,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 12,
+        "name": "GPIO9",
+        "gpio": 9,
+        "aliases": [
+          "BOOT"
+        ],
+        "side": "left",
+        "position": 12,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": "Strapping",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping",
+          "BOOT button"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 13,
+        "name": "GPIO10",
+        "gpio": 10,
+        "aliases": [],
+        "side": "right",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 14,
+        "name": "GPIO11",
+        "gpio": 11,
+        "aliases": [],
+        "side": "right",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 15,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": "Strapping",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping"
+        ],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 16,
+        "name": "GPIO18",
+        "gpio": 18,
+        "aliases": [],
+        "side": "right",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 17,
+        "name": "GPIO19",
+        "gpio": 19,
+        "aliases": [],
+        "side": "right",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 18,
+        "name": "GPIO20",
+        "gpio": 20,
+        "aliases": [],
+        "side": "right",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 19,
+        "name": "GPIO21",
+        "gpio": 21,
+        "aliases": [],
+        "side": "right",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 20,
+        "name": "GPIO22",
+        "gpio": 22,
+        "aliases": [],
+        "side": "right",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 21,
+        "name": "GPIO23",
+        "gpio": 23,
+        "aliases": [],
+        "side": "right",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 22,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 10,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 23,
+        "name": "RST",
+        "gpio": null,
+        "aliases": [
+          "EN"
+        ],
+        "side": "right",
+        "position": 11,
+        "type": "control",
+        "functions": [
+          "RST"
+        ],
+        "notes": "",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": true,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      },
+      {
+        "physicalPin": 24,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 12,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [],
+        "usedBy": null
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 6,
+          "scl": 7
+        }
+      ],
+      "spi": [],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 16,
+          "rx": 17
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO4": "Strapping",
+      "GPIO5": "Strapping",
+      "GPIO8": "Strapping",
+      "GPIO9": "Strapping",
+      "GPIO15": "Strapping"
+    },
+    "warnings": [
+      "No DAC, no touch",
+      "GPIO8 used by WS2812 LED and is strapping pin",
+      "Wi-Fi 6 but no legacy Bluetooth Classic"
+    ],
+    "documentationUrl": "https://www.waveshare.com/esp32-c6-pico.htm"
+  }
+]
