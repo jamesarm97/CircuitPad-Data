@@ -193,7 +193,7 @@
         "internalPullUp": true,
         "internalPullDown": false,
         "warnings": [
-          "Boot mode pin \u2014 pulling LOW enters flash mode"
+          "Boot mode pin — pulling LOW enters flash mode"
         ]
       },
       {
@@ -227,7 +227,7 @@
         "internalPullUp": true,
         "internalPullDown": false,
         "warnings": [
-          "Boot pin \u2014 must be HIGH at boot",
+          "Boot pin — must be HIGH at boot",
           "Connected to onboard LED (active LOW)"
         ]
       },
@@ -352,7 +352,7 @@
         "internalPullUp": false,
         "internalPullDown": true,
         "warnings": [
-          "Must be LOW at boot \u2014 external pull-up will prevent boot"
+          "Must be LOW at boot — external pull-up will prevent boot"
         ]
       },
       {
@@ -794,7 +794,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Connected to internal flash \u2014 DO NOT USE"
+          "Connected to internal flash — DO NOT USE"
         ]
       },
       {
@@ -824,7 +824,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Connected to internal flash \u2014 DO NOT USE"
+          "Connected to internal flash — DO NOT USE"
         ]
       },
       {
@@ -939,10 +939,10 @@
       "GPIO15": "Must be LOW during boot"
     },
     "warnings": [
-      "GPIO6-11 connected to internal flash \u2014 DO NOT USE",
+      "GPIO6-11 connected to internal flash — DO NOT USE",
       "Only 1 ADC channel (A0) with 10-bit resolution",
       "GPIO16 cannot use interrupts or I2C",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/"
   },
@@ -1026,7 +1026,7 @@
         "internalPullUp": true,
         "internalPullDown": false,
         "warnings": [
-          "Boot pin \u2014 must be HIGH at boot",
+          "Boot pin — must be HIGH at boot",
           "Connected to onboard LED"
         ]
       },
@@ -1237,9 +1237,9 @@
     "warnings": [
       "Requires external 3.3V regulated power supply",
       "Only 2 freely usable GPIOs (GPIO0 and GPIO2, both are boot pins)",
-      "No onboard USB \u2014 requires external USB-to-serial adapter",
+      "No onboard USB — requires external USB-to-serial adapter",
       "CH_PD/EN must be pulled HIGH",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/"
   },
@@ -1776,10 +1776,10 @@
       "GPIO15": "Must be LOW during boot"
     },
     "warnings": [
-      "GPIO6-11 connected to internal flash \u2014 not exposed",
+      "GPIO6-11 connected to internal flash — not exposed",
       "Only 1 ADC channel with 10-bit resolution",
       "GPIO16 cannot use interrupts, I2C, or PWM",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/"
   },
@@ -1890,7 +1890,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Input only \u2014 cannot be used as output"
+          "Input only — cannot be used as output"
         ]
       },
       {
@@ -1921,7 +1921,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Input only \u2014 cannot be used as output"
+          "Input only — cannot be used as output"
         ]
       },
       {
@@ -1949,7 +1949,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Input only \u2014 cannot be used as output"
+          "Input only — cannot be used as output"
         ]
       },
       {
@@ -1977,7 +1977,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Input only \u2014 cannot be used as output"
+          "Input only — cannot be used as output"
         ]
       },
       {
@@ -2059,7 +2059,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "ADC2 \u2014 cannot read analog when Wi-Fi is active"
+          "ADC2 — cannot read analog when Wi-Fi is active"
         ]
       },
       {
@@ -2089,7 +2089,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "ADC2 \u2014 cannot read analog when Wi-Fi is active"
+          "ADC2 — cannot read analog when Wi-Fi is active"
         ]
       },
       {
@@ -2117,7 +2117,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "ADC2 \u2014 cannot read analog when Wi-Fi is active"
+          "ADC2 — cannot read analog when Wi-Fi is active"
         ]
       },
       {
@@ -2178,7 +2178,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "Strapping pin \u2014 HIGH at boot sets flash to 1.8V",
+          "Strapping pin — HIGH at boot sets flash to 1.8V",
           "ADC2"
         ]
       },
@@ -2712,11 +2712,11 @@
       "GPIO15": "Must be HIGH for normal boot"
     },
     "warnings": [
-      "GPIO6-11 connected to internal flash \u2014 DO NOT USE",
+      "GPIO6-11 connected to internal flash — DO NOT USE",
       "GPIO34, 35, 36, 39 are input-only",
       "ADC2 channels cannot be used when Wi-Fi is active",
-      "GPIO12 strapping pin \u2014 HIGH at boot sets flash to 1.8V",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "GPIO12 strapping pin — HIGH at boot sets flash to 1.8V",
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://randomnerdtutorials.com/esp32-pinout-reference-gpios/"
   },
@@ -2827,7 +2827,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Input only \u2014 cannot be used as output"
+          "Input only — cannot be used as output"
         ]
       },
       {
@@ -2858,7 +2858,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Input only \u2014 cannot be used as output"
+          "Input only — cannot be used as output"
         ]
       },
       {
@@ -2886,7 +2886,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Input only \u2014 cannot be used as output"
+          "Input only — cannot be used as output"
         ]
       },
       {
@@ -2914,7 +2914,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Input only \u2014 cannot be used as output"
+          "Input only — cannot be used as output"
         ]
       },
       {
@@ -3187,7 +3187,7 @@
         "functions": [
           "GPIO"
         ],
-        "notes": "Internal flash \u2014 DO NOT USE",
+        "notes": "Internal flash — DO NOT USE",
         "safeForGeneral": false,
         "bootMode": null,
         "adcChannel": null,
@@ -3201,7 +3201,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Connected to internal flash \u2014 DO NOT USE"
+          "Connected to internal flash — DO NOT USE"
         ]
       },
       {
@@ -3217,7 +3217,7 @@
         "functions": [
           "GPIO"
         ],
-        "notes": "Internal flash \u2014 DO NOT USE",
+        "notes": "Internal flash — DO NOT USE",
         "safeForGeneral": false,
         "bootMode": null,
         "adcChannel": null,
@@ -3231,7 +3231,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Connected to internal flash \u2014 DO NOT USE"
+          "Connected to internal flash — DO NOT USE"
         ]
       },
       {
@@ -3247,7 +3247,7 @@
         "functions": [
           "GPIO"
         ],
-        "notes": "Internal flash \u2014 DO NOT USE",
+        "notes": "Internal flash — DO NOT USE",
         "safeForGeneral": false,
         "bootMode": null,
         "adcChannel": null,
@@ -3261,7 +3261,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Connected to internal flash \u2014 DO NOT USE"
+          "Connected to internal flash — DO NOT USE"
         ]
       },
       {
@@ -3764,7 +3764,7 @@
         "functions": [
           "GPIO"
         ],
-        "notes": "Internal flash \u2014 DO NOT USE",
+        "notes": "Internal flash — DO NOT USE",
         "safeForGeneral": false,
         "bootMode": null,
         "adcChannel": null,
@@ -3778,7 +3778,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Connected to internal flash \u2014 DO NOT USE"
+          "Connected to internal flash — DO NOT USE"
         ]
       },
       {
@@ -3794,7 +3794,7 @@
         "functions": [
           "GPIO"
         ],
-        "notes": "Internal flash \u2014 DO NOT USE",
+        "notes": "Internal flash — DO NOT USE",
         "safeForGeneral": false,
         "bootMode": null,
         "adcChannel": null,
@@ -3808,7 +3808,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Connected to internal flash \u2014 DO NOT USE"
+          "Connected to internal flash — DO NOT USE"
         ]
       },
       {
@@ -3824,7 +3824,7 @@
         "functions": [
           "GPIO"
         ],
-        "notes": "Internal flash \u2014 DO NOT USE",
+        "notes": "Internal flash — DO NOT USE",
         "safeForGeneral": false,
         "bootMode": null,
         "adcChannel": null,
@@ -3838,7 +3838,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Connected to internal flash \u2014 DO NOT USE"
+          "Connected to internal flash — DO NOT USE"
         ]
       }
     ],
@@ -3887,10 +3887,10 @@
       "GPIO15": "Must be HIGH for normal boot"
     },
     "warnings": [
-      "GPIO6-11 connected to internal flash \u2014 DO NOT USE",
+      "GPIO6-11 connected to internal flash — DO NOT USE",
       "GPIO34, 35, 36, 39 are input-only",
       "ADC2 channels cannot be used when Wi-Fi is active",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://randomnerdtutorials.com/esp32-pinout-reference-gpios/"
   },
@@ -4374,7 +4374,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Not a regulated 5V \u2014 raw USB voltage through Schottky diode"
+          "Not a regulated 5V — raw USB voltage through Schottky diode"
         ]
       },
       {
@@ -4800,13 +4800,13 @@
     },
     "bootPins": {
       "GPIO0": "Strapping pin",
-      "GPIO45": "Strapping pin \u2014 VDD_SPI",
-      "GPIO46": "Strapping pin \u2014 boot mode"
+      "GPIO45": "Strapping pin — VDD_SPI",
+      "GPIO46": "Strapping pin — boot mode"
     },
     "warnings": [
-      "Single-core only \u2014 no Bluetooth",
-      "Native USB \u2014 no external USB-to-serial chip",
-      "3.3V logic only \u2014 not 5V tolerant",
+      "Single-core only — no Bluetooth",
+      "Native USB — no external USB-to-serial chip",
+      "3.3V logic only — not 5V tolerant",
       "v1.0.0 silkscreen error: GPIO12 and GPIO13 labels are swapped on PCB"
     ],
     "documentationUrl": "https://www.wemos.cc/en/latest/s2/s2_mini.html"
@@ -5954,7 +5954,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "USB D+ \u2014 don't use if USB is needed"
+          "USB D+ — don't use if USB is needed"
         ]
       },
       {
@@ -5984,7 +5984,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "USB D- \u2014 don't use if USB is needed"
+          "USB D- — don't use if USB is needed"
         ]
       },
       {
@@ -6078,17 +6078,17 @@
       ]
     },
     "bootPins": {
-      "GPIO0": "Strapping pin \u2014 boot mode",
+      "GPIO0": "Strapping pin — boot mode",
       "GPIO3": "Strapping pin",
-      "GPIO45": "Strapping pin \u2014 VDD_SPI voltage",
-      "GPIO46": "Strapping pin \u2014 boot mode"
+      "GPIO45": "Strapping pin — VDD_SPI voltage",
+      "GPIO46": "Strapping pin — boot mode"
     },
     "warnings": [
       "No DAC on ESP32-S3",
-      "GPIO26-32 connected to SPI flash/PSRAM \u2014 not exposed on most modules",
+      "GPIO26-32 connected to SPI flash/PSRAM — not exposed on most modules",
       "GPIO35-37 reserved for Octal SPI flash variants (N16R8)",
       "GPIO19/20 are USB pins",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://randomnerdtutorials.com/esp32-s3-devkitc-pinout-guide/"
   },
@@ -6748,16 +6748,16 @@
       ]
     },
     "bootPins": {
-      "GPIO0": "Strapping pin \u2014 boot mode",
+      "GPIO0": "Strapping pin — boot mode",
       "GPIO3": "Strapping pin",
       "GPIO45": "Strapping pin",
       "GPIO46": "Strapping pin"
     },
     "warnings": [
-      "Very limited GPIO count \u2014 only 14 exposed",
+      "Very limited GPIO count — only 14 exposed",
       "No DAC",
       "Native USB on GPIO19/20 (not exposed)",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://www.espboards.dev/esp32/esp32-s3-super-mini/"
   },
@@ -7341,7 +7341,7 @@
         ],
         "notes": "Strapping pin. Controls ROM message printing.",
         "safeForGeneral": false,
-        "bootMode": "Strapping pin \u2014 ROM messages",
+        "bootMode": "Strapping pin — ROM messages",
         "adcChannel": null,
         "dacChannel": null,
         "touchChannel": null,
@@ -7633,14 +7633,14 @@
       ]
     },
     "bootPins": {
-      "GPIO2": "Strapping pin \u2014 boot mode",
-      "GPIO8": "Strapping pin \u2014 ROM messages",
-      "GPIO9": "Strapping pin \u2014 download mode"
+      "GPIO2": "Strapping pin — boot mode",
+      "GPIO8": "Strapping pin — ROM messages",
+      "GPIO9": "Strapping pin — download mode"
     },
     "warnings": [
-      "RISC-V single-core \u2014 no Xtensa",
+      "RISC-V single-core — no Xtensa",
       "No DAC, no touch sensing",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://randomnerdtutorials.com/esp32-c3-super-mini-pinout/"
   },
@@ -8149,15 +8149,15 @@
     },
     "bootPins": {
       "GPIO2": "Strapping pin",
-      "GPIO8": "Strapping pin \u2014 ROM messages",
-      "GPIO9": "Strapping pin \u2014 boot mode"
+      "GPIO8": "Strapping pin — ROM messages",
+      "GPIO9": "Strapping pin — boot mode"
     },
     "warnings": [
       "RISC-V single-core",
       "Only 11 usable GPIOs",
       "No DAC, no touch sensing",
       "GPIO8 shared with RGB LED",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://randomnerdtutorials.com/getting-started-esp32-c3-super-mini/"
   },
@@ -9044,8 +9044,8 @@
     "bootPins": {
       "GPIO4": "Strapping pin (MTMS)",
       "GPIO5": "Strapping pin (MTDI)",
-      "GPIO8": "Strapping pin \u2014 controls boot/log",
-      "GPIO9": "Strapping pin \u2014 download mode",
+      "GPIO8": "Strapping pin — controls boot/log",
+      "GPIO9": "Strapping pin — download mode",
       "GPIO15": "Strapping pin"
     },
     "warnings": [
@@ -9053,7 +9053,7 @@
       "No DAC, no touch sensing",
       "GPIO12/13 are USB pins",
       "Wi-Fi 6 support but no legacy Bluetooth Classic",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html"
   },
@@ -9064,7 +9064,7 @@
     "manufacturer": "Espressif",
     "family": "ESP32",
     "chip": "ESP32-H2-MINI-1",
-    "description": "Low-power BLE 5 + Zigbee/Thread/Matter dev board \u2014 no Wi-Fi",
+    "description": "Low-power BLE 5 + Zigbee/Thread/Matter dev board — no Wi-Fi",
     "specs": {
       "processor": "Single-core RISC-V @ 96MHz",
       "flash": "4MB",
@@ -9932,16 +9932,16 @@
     "bootPins": {
       "GPIO2": "Strapping pin",
       "GPIO3": "Strapping pin",
-      "GPIO8": "Strapping pin \u2014 controls boot/log",
-      "GPIO9": "Strapping pin \u2014 download mode",
+      "GPIO8": "Strapping pin — controls boot/log",
+      "GPIO9": "Strapping pin — download mode",
       "GPIO25": "Strapping pin"
     },
     "warnings": [
-      "NO WI-FI \u2014 BLE + Zigbee/Thread only",
+      "NO WI-FI — BLE + Zigbee/Thread only",
       "RISC-V single-core @ 96MHz (slower than other ESP32 variants)",
       "No DAC, no touch sensing",
       "GPIO26/27 are USB pins",
-      "3.3V logic only \u2014 not 5V tolerant"
+      "3.3V logic only — not 5V tolerant"
     ],
     "documentationUrl": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html"
   },
@@ -10928,9 +10928,9 @@
     },
     "bootPins": {},
     "warnings": [
-      "5V logic \u2014 many 3.3V sensors need level shifting",
-      "Only 2KB SRAM \u2014 memory constrained",
-      "No wireless \u2014 external modules needed",
+      "5V logic — many 3.3V sensors need level shifting",
+      "Only 2KB SRAM — memory constrained",
+      "No wireless — external modules needed",
       "6 PWM pins only (3, 5, 6, 9, 10, 11)",
       "10-bit ADC (0-1023)"
     ],
@@ -11252,7 +11252,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Analog input only \u2014 no digital I/O"
+          "Analog input only — no digital I/O"
         ]
       },
       {
@@ -11282,7 +11282,7 @@
         "internalPullUp": false,
         "internalPullDown": false,
         "warnings": [
-          "Analog input only \u2014 no digital I/O"
+          "Analog input only — no digital I/O"
         ]
       },
       {
@@ -11867,7 +11867,7 @@
     },
     "bootPins": {},
     "warnings": [
-      "5V logic \u2014 many 3.3V sensors need level shifting",
+      "5V logic — many 3.3V sensors need level shifting",
       "Only 2KB SRAM",
       "A6 and A7 are analog input only",
       "No wireless",
@@ -13098,8 +13098,8 @@
     },
     "bootPins": {},
     "warnings": [
-      "No wireless \u2014 use Pico W for Wi-Fi",
-      "3.3V logic \u2014 not 5V tolerant",
+      "No wireless — use Pico W for Wi-Fi",
+      "3.3V logic — not 5V tolerant",
       "Only 3 ADC channels (GP26-28)",
       "GP23-25 are used internally (not on headers)",
       "12-bit ADC"
@@ -13994,7 +13994,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "JTAG pin \u2014 needs remapping"
+          "JTAG pin — needs remapping"
         ]
       },
       {
@@ -14027,7 +14027,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "JTAG pin \u2014 needs remapping"
+          "JTAG pin — needs remapping"
         ]
       },
       {
@@ -14060,7 +14060,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "JTAG pin \u2014 needs remapping"
+          "JTAG pin — needs remapping"
         ]
       },
       {
@@ -14092,7 +14092,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "USB D+ \u2014 needed for USB"
+          "USB D+ — needed for USB"
         ]
       },
       {
@@ -14124,7 +14124,7 @@
         "internalPullUp": true,
         "internalPullDown": true,
         "warnings": [
-          "USB D- \u2014 needed for USB"
+          "USB D- — needed for USB"
         ]
       },
       {
@@ -14392,7 +14392,7 @@
     "warnings": [
       "3.3V logic but most pins are 5V tolerant (except PA0-PA7 analog pins)",
       "Many cheap clones have counterfeit STM32 chips",
-      "PC13 LED pin has weak drive \u2014 only for LED, not loads",
+      "PC13 LED pin has weak drive — only for LED, not loads",
       "JTAG pins (PB3, PB4, PA15) need remapping to use as GPIO",
       "Onboard 3.3V regulator is weak (100mA)"
     ],
@@ -15291,11 +15291,11 @@
     },
     "bootPins": {},
     "warnings": [
-      "3.3V logic \u2014 NOT 5V tolerant (unlike Teensy 3.x)",
-      "No wireless \u2014 external module needed",
+      "3.3V logic — NOT 5V tolerant (unlike Teensy 3.x)",
+      "No wireless — external module needed",
       "Bottom pads (pins 24-33) not breadboard accessible",
-      "Very fast processor \u2014 beware of timing-sensitive code",
-      "600MHz generates heat \u2014 avoid blocking airflow"
+      "Very fast processor — beware of timing-sensitive code",
+      "600MHz generates heat — avoid blocking airflow"
     ],
     "documentationUrl": "https://www.pjrc.com/store/teensy40.html"
   },
@@ -17665,8 +17665,8 @@
     },
     "bootPins": {},
     "warnings": [
-      "5V logic \u2014 many 3.3V sensors need level shifting",
-      "No wireless \u2014 external modules needed",
+      "5V logic — many 3.3V sensors need level shifting",
+      "No wireless — external modules needed",
       "Pin 13 has built-in LED (can affect input use)",
       "D4 and D13 PWM at 980Hz (others at 490Hz)",
       "15 PWM pins: D2-D13, D44-D46",
@@ -18613,13 +18613,13 @@
     },
     "bootPins": {},
     "warnings": [
-      "5V logic \u2014 many 3.3V sensors need level shifting",
+      "5V logic — many 3.3V sensors need level shifting",
       "I2C is on D2/D3, NOT A4/A5 (unlike Uno)",
       "SPI on ICSP header ONLY, NOT D11/D12/D13",
-      "Native USB \u2014 Serial=USB, Serial1=D0/D1 UART",
+      "Native USB — Serial=USB, Serial1=D0/D1 UART",
       "7 PWM pins (D3, D5, D6, D9, D10, D11, D13)",
       "12 ADC inputs (A0-A5 + A6-A11 on D4/D6/D8/D9/D10/D12)",
-      "No wireless \u2014 external modules needed",
+      "No wireless — external modules needed",
       "10-bit ADC (0-1023)"
     ],
     "documentationUrl": "https://docs.arduino.cc/hardware/leonardo/"
@@ -19554,12 +19554,12 @@
     },
     "bootPins": {},
     "warnings": [
-      "5V logic \u2014 many 3.3V sensors need level shifting",
-      "Only 5 PWM pins (D3, D5, D6, D9, D10) \u2014 no D11 PWM",
+      "5V logic — many 3.3V sensors need level shifting",
+      "Only 5 PWM pins (D3, D5, D6, D9, D10) — no D11 PWM",
       "SPI SS is on D8, NOT D10 (differs from classic Nano)",
       "Only 256 bytes EEPROM (less than classic Nano's 1KB)",
       "Serial=USB (SAMD11 bridge), Serial1=D0/D1 UART",
-      "No wireless \u2014 external modules needed",
+      "No wireless — external modules needed",
       "All pins support attachInterrupt()",
       "10-bit ADC (0-1023)"
     ],
@@ -20788,8 +20788,8 @@
     "bootPins": {},
     "warnings": [
       "GP23, GP24, GP25, GP29 used by wireless module",
-      "LED is NOT on GP25 \u2014 controlled via CYW43439 (WL_GPIO0)",
-      "3.3V logic \u2014 not 5V tolerant",
+      "LED is NOT on GP25 — controlled via CYW43439 (WL_GPIO0)",
+      "3.3V logic — not 5V tolerant",
       "Only 3 ADC channels (GP26-28)",
       "12-bit ADC"
     ],
@@ -22016,8 +22016,8 @@
     },
     "bootPins": {},
     "warnings": [
-      "No wireless \u2014 use Pico 2 W for WiFi/BLE",
-      "3.3V logic \u2014 not 5V tolerant",
+      "No wireless — use Pico 2 W for WiFi/BLE",
+      "3.3V logic — not 5V tolerant",
       "Only 3 ADC channels (GP26-28)",
       "GP23-25 used internally (not on headers)",
       "12-bit ADC",
@@ -22025,5 +22025,3087 @@
       "Secure Boot and ARM TrustZone support"
     ],
     "documentationUrl": "https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html"
+  },
+  {
+    "id": "esp32-cam",
+    "name": "ESP32-CAM",
+    "variant": "AI-Thinker",
+    "manufacturer": "AI-Thinker",
+    "family": "ESP32",
+    "chip": "ESP32-S (ESP32-D0WD)",
+    "description": "Low-cost ESP32 camera module with OV2640, 4MB PSRAM, SD card slot, and flash LED. No onboard USB — requires external FTDI adapter for programming.",
+    "specs": {
+      "processor": "Dual-core Xtensa LX6 @ 240MHz",
+      "flash": "4MB",
+      "sram": "520KB",
+      "psram": "4MB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 4.2 + BLE",
+      "voltage": "3.3V logic, 5V power input",
+      "gpioCount": 10,
+      "adcChannels": 7,
+      "dacChannels": 0,
+      "uartPorts": 2,
+      "spiPorts": 1,
+      "i2cPorts": 1,
+      "pwmChannels": 16,
+      "totalPins": 16
+    },
+    "internalPeripherals": {
+      "camera": {
+        "chip": "OV2640",
+        "resolution": "2MP (1600x1200)",
+        "interface": "DVP parallel",
+        "d0-d7": [
+          5,
+          18,
+          19,
+          21,
+          36,
+          39,
+          34,
+          35
+        ],
+        "xclk": 0,
+        "pclk": 22,
+        "vsync": 25,
+        "href": 23,
+        "sda": 26,
+        "scl": 27
+      },
+      "sdcard": {
+        "interface": "SD MMC (1-bit or 4-bit)",
+        "clk": 14,
+        "cmd": 15,
+        "data0": 2,
+        "data1": 4,
+        "data2": 12,
+        "data3": 13,
+        "note": "Shares GPIO2, GPIO4, GPIO12, GPIO13, GPIO14, GPIO15 with header pins"
+      },
+      "flashLed": {
+        "gpio": 4,
+        "type": "White LED (very bright)",
+        "note": "Shared with SD card DATA1 — turns on briefly when SD card is accessed"
+      },
+      "statusLed": {
+        "gpio": 33,
+        "type": "Red LED",
+        "activeLevel": "LOW",
+        "note": "Not on header — internal only"
+      }
+    },
+    "availableGPIOs": [
+      1,
+      3
+    ],
+    "usedGPIOs": [
+      0,
+      2,
+      4,
+      5,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      33,
+      34,
+      35,
+      36,
+      39
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [
+          "VCC"
+        ],
+        "side": "left",
+        "position": 1,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "5V power input. Supply 5V here for board operation.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 2,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 2,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO12",
+        "gpio": 12,
+        "aliases": [
+          "HSPI_MISO",
+          "SD_DATA2"
+        ],
+        "side": "left",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SD_DATA2",
+          "HSPI_MISO"
+        ],
+        "notes": "Shared with SD card DATA2. Strapping pin — must be LOW at boot for 3.3V flash.",
+        "safeForGeneral": false,
+        "bootMode": "Must be LOW for 3.3V flash voltage",
+        "adcChannel": "ADC2_CH5",
+        "dacChannel": null,
+        "touchChannel": "TOUCH5",
+        "uart": null,
+        "spi": "HSPI_MISO",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin — HIGH at boot sets flash to 1.8V",
+          "Shared with SD card DATA2 — unavailable when SD card is in use",
+          "ADC2 — cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO13",
+        "gpio": 13,
+        "aliases": [
+          "HSPI_MOSI",
+          "SD_DATA3"
+        ],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SD_DATA3",
+          "HSPI_MOSI"
+        ],
+        "notes": "Shared with SD card DATA3 (CS). Usable when SD card is not in use.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH4",
+        "dacChannel": null,
+        "touchChannel": "TOUCH4",
+        "uart": null,
+        "spi": "HSPI_MOSI",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Shared with SD card DATA3 — unavailable when SD card is in use",
+          "ADC2 — cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [
+          "HSPI_CS",
+          "SD_CMD"
+        ],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SD_CMD",
+          "HSPI_CS"
+        ],
+        "notes": "Shared with SD card CMD line. Strapping pin — controls boot log output.",
+        "safeForGeneral": false,
+        "bootMode": "LOW silences boot log on UART0",
+        "adcChannel": "ADC2_CH3",
+        "dacChannel": null,
+        "touchChannel": "TOUCH3",
+        "uart": null,
+        "spi": "HSPI_CS",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin — LOW silences boot messages",
+          "Shared with SD card CMD — unavailable when SD card is in use",
+          "ADC2 — cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO14",
+        "gpio": 14,
+        "aliases": [
+          "HSPI_CLK",
+          "SD_CLK"
+        ],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SD_CLK",
+          "HSPI_CLK"
+        ],
+        "notes": "Shared with SD card CLK. Outputs PWM signal at boot.",
+        "safeForGeneral": false,
+        "bootMode": "Outputs PWM signal at boot",
+        "adcChannel": "ADC2_CH6",
+        "dacChannel": null,
+        "touchChannel": "TOUCH6",
+        "uart": null,
+        "spi": "HSPI_CLK",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Outputs PWM at boot",
+          "Shared with SD card CLK — unavailable when SD card is in use",
+          "ADC2 — cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [
+          "SD_DATA0"
+        ],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SD_DATA0"
+        ],
+        "notes": "Shared with SD card DATA0. Strapping pin — must be LOW or floating for normal boot. Must be LOW for serial flashing.",
+        "safeForGeneral": false,
+        "bootMode": "Must be LOW or floating for normal boot",
+        "adcChannel": "ADC2_CH2",
+        "dacChannel": null,
+        "touchChannel": "TOUCH2",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin — must be LOW for flash boot",
+          "Shared with SD card DATA0 — unavailable when SD card is in use",
+          "ADC2 — cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO4",
+        "gpio": 4,
+        "aliases": [
+          "FLASH_LED",
+          "SD_DATA1"
+        ],
+        "side": "left",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SD_DATA1",
+          "Flash LED"
+        ],
+        "notes": "Connected to bright white flash LED AND SD card DATA1. LED turns on when pin is HIGH. Flickers during SD card access.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH0",
+        "dacChannel": null,
+        "touchChannel": "TOUCH0",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Connected to very bright white flash LED — HIGH turns LED on",
+          "Shared with SD card DATA1 — LED flickers during SD access",
+          "ADC2 — cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 9,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 1,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "3.3V regulated output from onboard regulator",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO16",
+        "gpio": 16,
+        "aliases": [
+          "RX2",
+          "PSRAM"
+        ],
+        "side": "right",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "PSRAM_CS"
+        ],
+        "notes": "Connected to PSRAM on most ESP32-CAM modules. Cannot be used freely — using this pin will crash PSRAM.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART2_RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Connected to PSRAM — do NOT use as GPIO or PSRAM will malfunction",
+          "Using this pin causes system crashes and camera failures"
+        ]
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO0",
+        "gpio": 0,
+        "aliases": [
+          "BOOT",
+          "CAM_XCLK"
+        ],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "Camera XCLK",
+          "Boot Mode"
+        ],
+        "notes": "Boot mode select AND camera XCLK. Pull LOW during reset to enter flash mode. Used as camera clock during normal operation.",
+        "safeForGeneral": false,
+        "bootMode": "LOW=flash mode, HIGH/floating=normal boot",
+        "adcChannel": "ADC2_CH1",
+        "dacChannel": null,
+        "touchChannel": "TOUCH1",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Must be held LOW during reset to enter programming mode",
+          "Used as camera XCLK — not available when camera is active",
+          "ADC2 — cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 12,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 4,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 13,
+        "name": "VCC",
+        "gpio": null,
+        "aliases": [
+          "5V"
+        ],
+        "side": "right",
+        "position": 5,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "5V power input/output. Can be used to power external components or as alternate power input.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 14,
+        "name": "GPIO3",
+        "gpio": 3,
+        "aliases": [
+          "U0RXD",
+          "RX0"
+        ],
+        "side": "right",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "UART0_RX"
+        ],
+        "notes": "UART0 RX. Used for serial programming and debug output. Connect to FTDI TX for programming.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "UART0 RX — needed for serial programming",
+          "HIGH at boot"
+        ]
+      },
+      {
+        "physicalPin": 15,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [
+          "U0TXD",
+          "TX0"
+        ],
+        "side": "right",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "UART0_TX"
+        ],
+        "notes": "UART0 TX. Used for serial programming and debug output. Connect to FTDI RX for programming.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "UART0 TX — outputs debug log at boot",
+          "Needed for serial programming"
+        ]
+      },
+      {
+        "physicalPin": 16,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 8,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0 (camera SCCB)",
+          "sda": 26,
+          "scl": 27
+        }
+      ],
+      "spi": [
+        {
+          "name": "HSPI (SD card)",
+          "mosi": 13,
+          "miso": 12,
+          "sclk": 14,
+          "cs": 15
+        }
+      ],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 1,
+          "rx": 3
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO0": "LOW=flash mode, HIGH/floating=normal boot",
+      "GPIO2": "Must be LOW or floating for flash boot",
+      "GPIO12": "Must be LOW for 3.3V flash voltage",
+      "GPIO15": "LOW silences boot log on UART0"
+    },
+    "warnings": [
+      "No onboard USB — requires external FTDI/USB-serial adapter for programming",
+      "GPIO0 must be held LOW during reset to enter flash/programming mode",
+      "GPIO2, 4, 12, 13, 14, 15 are shared between SD card and headers — using SD card disables these as GPIO",
+      "GPIO4 is connected to bright white flash LED — will light up when pin is HIGH or during SD access",
+      "GPIO16 is connected to PSRAM — cannot be used as GPIO without losing PSRAM functionality",
+      "GPIO33 (red status LED) is not on any header — internal use only",
+      "Camera uses GPIO 0, 5, 18, 19, 21, 22, 23, 25, 26, 27, 34, 35, 36, 39 — none available when camera is active",
+      "GPIO34-39 are input-only (used by camera internally)",
+      "DAC pins (GPIO25, GPIO26) are used by camera — no DAC channels available on headers",
+      "ADC2 channels cannot be used when Wi-Fi is active",
+      "3.3V logic only — not 5V tolerant on GPIO pins"
+    ],
+    "documentationUrl": "https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/"
+  },
+  {
+    "id": "arduino-nano-esp32",
+    "name": "Arduino Nano ESP32",
+    "variant": "",
+    "manufacturer": "Arduino",
+    "family": "ESP32",
+    "chip": "ESP32-S3 (u-blox NORA-W106)",
+    "description": "Arduino Nano form factor with ESP32-S3, native USB, and dual pin numbering modes",
+    "specs": {
+      "processor": "Dual-core Xtensa LX7 @ 240MHz",
+      "flash": "16MB",
+      "sram": "512KB",
+      "psram": "8MB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 5 LE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 22,
+      "adcChannels": 14,
+      "dacChannels": 0,
+      "uartPorts": 3,
+      "spiPorts": 2,
+      "i2cPorts": 2,
+      "pwmChannels": 8,
+      "totalPins": 30
+    },
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "D13",
+        "gpio": 48,
+        "aliases": [
+          "GPIO48",
+          "SCK",
+          "SPI2_SCK"
+        ],
+        "side": "left",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SPI2_SCK"
+        ],
+        "notes": "Default SPI clock. Also usable as general GPIO.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": "SPI2_SCK",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 2,
+        "name": "+3V3",
+        "gpio": null,
+        "aliases": [
+          "3.3V"
+        ],
+        "side": "left",
+        "position": 2,
+        "type": "power",
+        "functions": [
+          "3.3V Power"
+        ],
+        "notes": "3.3V regulated output from onboard regulator",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 3,
+        "name": "AREF",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 3,
+        "type": "control",
+        "functions": [
+          "AREF"
+        ],
+        "notes": "Analog reference pin. Not connected on Nano ESP32.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Not connected on this board"
+        ]
+      },
+      {
+        "physicalPin": 4,
+        "name": "A0",
+        "gpio": 1,
+        "aliases": [
+          "GPIO1",
+          "ADC1_CH0",
+          "TOUCH1"
+        ],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH0",
+          "Touch"
+        ],
+        "notes": "Analog input with touch sensing. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": "TOUCH1",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 5,
+        "name": "A1",
+        "gpio": 2,
+        "aliases": [
+          "GPIO2",
+          "ADC1_CH1",
+          "TOUCH2"
+        ],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH1",
+          "Touch"
+        ],
+        "notes": "Analog input with touch sensing. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": "TOUCH2",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 6,
+        "name": "A2",
+        "gpio": 3,
+        "aliases": [
+          "GPIO3",
+          "ADC1_CH2",
+          "TOUCH3"
+        ],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH2",
+          "Touch"
+        ],
+        "notes": "Analog input with touch sensing. Strapping pin for JTAG select.",
+        "safeForGeneral": true,
+        "bootMode": "JTAG signal select at boot",
+        "adcChannel": "ADC1_CH2",
+        "dacChannel": null,
+        "touchChannel": "TOUCH3",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin (JTAG select) -- avoid pulling at boot"
+        ]
+      },
+      {
+        "physicalPin": 7,
+        "name": "A3",
+        "gpio": 4,
+        "aliases": [
+          "GPIO4",
+          "ADC1_CH3",
+          "TOUCH4"
+        ],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH3",
+          "Touch"
+        ],
+        "notes": "Analog input with touch sensing. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH3",
+        "dacChannel": null,
+        "touchChannel": "TOUCH4",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 8,
+        "name": "A4",
+        "gpio": 11,
+        "aliases": [
+          "GPIO11",
+          "SDA",
+          "I2C_SDA",
+          "ADC2_CH0",
+          "TOUCH11"
+        ],
+        "side": "left",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "I2C_SDA",
+          "ADC2_CH0",
+          "Touch"
+        ],
+        "notes": "Default I2C data line. Also ADC2 and touch capable.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH0",
+        "dacChannel": null,
+        "touchChannel": "TOUCH11",
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Default I2C SDA -- conflicts if I2C bus is active"
+        ]
+      },
+      {
+        "physicalPin": 9,
+        "name": "A5",
+        "gpio": 12,
+        "aliases": [
+          "GPIO12",
+          "SCL",
+          "I2C_SCL",
+          "ADC2_CH1",
+          "TOUCH12"
+        ],
+        "side": "left",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "I2C_SCL",
+          "ADC2_CH1",
+          "Touch"
+        ],
+        "notes": "Default I2C clock line. Also ADC2 and touch capable.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH1",
+        "dacChannel": null,
+        "touchChannel": "TOUCH12",
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Default I2C SCL -- conflicts if I2C bus is active"
+        ]
+      },
+      {
+        "physicalPin": 10,
+        "name": "A6",
+        "gpio": 13,
+        "aliases": [
+          "GPIO13",
+          "ADC2_CH2",
+          "TOUCH13"
+        ],
+        "side": "left",
+        "position": 10,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC2_CH2",
+          "Touch"
+        ],
+        "notes": "Analog input with touch sensing. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH2",
+        "dacChannel": null,
+        "touchChannel": "TOUCH13",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 11,
+        "name": "A7",
+        "gpio": 14,
+        "aliases": [
+          "GPIO14",
+          "ADC2_CH3",
+          "TOUCH14"
+        ],
+        "side": "left",
+        "position": 11,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC2_CH3",
+          "Touch"
+        ],
+        "notes": "Analog input with touch sensing. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH3",
+        "dacChannel": null,
+        "touchChannel": "TOUCH14",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 12,
+        "name": "+5V",
+        "gpio": null,
+        "aliases": [
+          "VBUS",
+          "5V"
+        ],
+        "side": "left",
+        "position": 12,
+        "type": "power",
+        "functions": [
+          "5V Power"
+        ],
+        "notes": "5V from USB (VBUS). Can also supply 5V input.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 13,
+        "name": "RST",
+        "gpio": null,
+        "aliases": [
+          "RESET"
+        ],
+        "side": "left",
+        "position": 13,
+        "type": "control",
+        "functions": [
+          "Reset"
+        ],
+        "notes": "Active-low reset. Pull LOW to reset the board.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Directly resets the ESP32-S3"
+        ]
+      },
+      {
+        "physicalPin": 14,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 14,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 15,
+        "name": "VIN",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 15,
+        "type": "power",
+        "functions": [
+          "VIN"
+        ],
+        "notes": "External voltage input (6-21V). Powers onboard regulator.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 16,
+        "name": "D12",
+        "gpio": 47,
+        "aliases": [
+          "GPIO47",
+          "MISO",
+          "SPI2_MISO"
+        ],
+        "side": "right",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SPI2_MISO"
+        ],
+        "notes": "Default SPI MISO. Also usable as general GPIO.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": "SPI2_MISO",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 17,
+        "name": "D11",
+        "gpio": 38,
+        "aliases": [
+          "GPIO38",
+          "MOSI",
+          "SPI2_MOSI"
+        ],
+        "side": "right",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SPI2_MOSI"
+        ],
+        "notes": "Default SPI MOSI. Also usable as general GPIO.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": "SPI2_MOSI",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 18,
+        "name": "D10",
+        "gpio": 21,
+        "aliases": [
+          "GPIO21",
+          "CS",
+          "SPI2_CS",
+          "SS"
+        ],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SPI2_CS"
+        ],
+        "notes": "Default SPI chip select. Also usable as general GPIO.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": "SPI2_CS",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 19,
+        "name": "D9",
+        "gpio": 18,
+        "aliases": [
+          "GPIO18",
+          "ADC2_CH7"
+        ],
+        "side": "right",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC2_CH7"
+        ],
+        "notes": "General purpose GPIO with ADC. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH7",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 20,
+        "name": "D8",
+        "gpio": 17,
+        "aliases": [
+          "GPIO17",
+          "ADC2_CH6"
+        ],
+        "side": "right",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC2_CH6"
+        ],
+        "notes": "General purpose GPIO with ADC. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH6",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 21,
+        "name": "D7",
+        "gpio": 10,
+        "aliases": [
+          "GPIO10",
+          "ADC1_CH9",
+          "TOUCH10"
+        ],
+        "side": "right",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH9",
+          "Touch"
+        ],
+        "notes": "General purpose GPIO with ADC and touch. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH9",
+        "dacChannel": null,
+        "touchChannel": "TOUCH10",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 22,
+        "name": "D6",
+        "gpio": 9,
+        "aliases": [
+          "GPIO9",
+          "ADC1_CH8",
+          "TOUCH9"
+        ],
+        "side": "right",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH8",
+          "Touch"
+        ],
+        "notes": "General purpose GPIO with ADC and touch. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH8",
+        "dacChannel": null,
+        "touchChannel": "TOUCH9",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 23,
+        "name": "D5",
+        "gpio": 8,
+        "aliases": [
+          "GPIO8",
+          "ADC1_CH7",
+          "TOUCH8"
+        ],
+        "side": "right",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH7",
+          "Touch"
+        ],
+        "notes": "General purpose GPIO with ADC and touch. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH7",
+        "dacChannel": null,
+        "touchChannel": "TOUCH8",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 24,
+        "name": "D4",
+        "gpio": 7,
+        "aliases": [
+          "GPIO7",
+          "ADC1_CH6",
+          "TOUCH7"
+        ],
+        "side": "right",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH6",
+          "Touch"
+        ],
+        "notes": "General purpose GPIO with ADC and touch. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH6",
+        "dacChannel": null,
+        "touchChannel": "TOUCH7",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 25,
+        "name": "D3",
+        "gpio": 6,
+        "aliases": [
+          "GPIO6",
+          "ADC1_CH5",
+          "TOUCH6"
+        ],
+        "side": "right",
+        "position": 10,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH5",
+          "Touch"
+        ],
+        "notes": "General purpose GPIO with ADC and touch. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": "TOUCH6",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 26,
+        "name": "D2",
+        "gpio": 5,
+        "aliases": [
+          "GPIO5",
+          "ADC1_CH4",
+          "TOUCH5"
+        ],
+        "side": "right",
+        "position": 11,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH4",
+          "Touch"
+        ],
+        "notes": "General purpose GPIO with ADC and touch. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": "TOUCH5",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 27,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 12,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 28,
+        "name": "RST",
+        "gpio": null,
+        "aliases": [
+          "RESET"
+        ],
+        "side": "right",
+        "position": 13,
+        "type": "control",
+        "functions": [
+          "Reset"
+        ],
+        "notes": "Active-low reset. Pull LOW to reset the board.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Directly resets the ESP32-S3"
+        ]
+      },
+      {
+        "physicalPin": 29,
+        "name": "D0",
+        "gpio": 44,
+        "aliases": [
+          "GPIO44",
+          "RX",
+          "UART0_RX"
+        ],
+        "side": "right",
+        "position": 14,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "UART0_RX"
+        ],
+        "notes": "Default UART0 receive. Used for serial communication.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Used for USB-CDC serial -- avoid if using Serial Monitor"
+        ]
+      },
+      {
+        "physicalPin": 30,
+        "name": "D1",
+        "gpio": 43,
+        "aliases": [
+          "GPIO43",
+          "TX",
+          "UART0_TX"
+        ],
+        "side": "right",
+        "position": 15,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "UART0_TX"
+        ],
+        "notes": "Default UART0 transmit. Used for serial communication.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Used for USB-CDC serial -- avoid if using Serial Monitor"
+        ]
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 11,
+          "scl": 12
+        }
+      ],
+      "spi": [
+        {
+          "name": "SPI2",
+          "mosi": 38,
+          "miso": 47,
+          "sclk": 48,
+          "cs": 21
+        }
+      ],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 43,
+          "rx": 44
+        }
+      ]
+    },
+    "warnings": [
+      "Pin numbering differs between Arduino and ESP32 GPIO modes",
+      "GPIO46 used by onboard RGB LED",
+      "GPIO0 is the BOOT button -- not exposed on headers",
+      "Native USB on GPIO19/GPIO20 -- not exposed on headers"
+    ]
+  },
+  {
+    "id": "lolin-c3-mini",
+    "name": "LOLIN C3 Mini",
+    "variant": "v2.1",
+    "manufacturer": "LOLIN (Wemos)",
+    "family": "ESP32",
+    "chip": "ESP32-C3FN4",
+    "description": "Ultra-compact ESP32-C3 board with RISC-V core, Wi-Fi/BLE, D1 Mini shield-compatible form factor, and USB-C programming",
+    "specs": {
+      "processor": "Single-core RISC-V @ 160MHz",
+      "flash": "4MB",
+      "sram": "400KB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 5.0 LE",
+      "voltage": "3.3V logic, 5V USB power",
+      "gpioCount": 12,
+      "adcChannels": 6,
+      "dacChannels": 0,
+      "uartPorts": 2,
+      "spiPorts": 1,
+      "i2cPorts": 1,
+      "pwmChannels": 6,
+      "totalPins": 16
+    },
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 1,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "3.3V regulated output from onboard LDO",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [
+          "A1"
+        ],
+        "side": "left",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH1"
+        ],
+        "notes": "General-purpose GPIO with ADC. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH1",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO0",
+        "gpio": 0,
+        "aliases": [
+          "A0"
+        ],
+        "side": "left",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH0"
+        ],
+        "notes": "General-purpose GPIO with ADC. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 4,
+        "name": "GPIO4",
+        "gpio": 4,
+        "aliases": [
+          "A4",
+          "MISO"
+        ],
+        "side": "left",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH4",
+          "SPI2_MISO"
+        ],
+        "notes": "General-purpose GPIO with ADC. Default SPI MISO. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": "SPI2_MISO",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO5",
+        "gpio": 5,
+        "aliases": [
+          "SCK"
+        ],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC2_CH0",
+          "SPI2_SCK"
+        ],
+        "notes": "General-purpose GPIO. Default SPI clock. ADC2 channel (may conflict with Wi-Fi).",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": "SPI2_SCK",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "ADC2 -- may not work when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO6",
+        "gpio": 6,
+        "aliases": [
+          "MOSI"
+        ],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SPI2_MOSI"
+        ],
+        "notes": "General-purpose GPIO. Default SPI MOSI. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": "SPI2_MOSI",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO7",
+        "gpio": 7,
+        "aliases": [
+          "SS",
+          "LED"
+        ],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "SPI2_SS"
+        ],
+        "notes": "General-purpose GPIO. Default SPI CS. On v1.0: connected to blue LED. On v2.1: connected to WS2812B addressable RGB LED.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": "SPI2_SS",
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Connected to onboard LED (blue on v1.0, WS2812B on v2.1)"
+        ]
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO8",
+        "gpio": 8,
+        "aliases": [],
+        "side": "left",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "General-purpose GPIO. Strapping pin -- must be HIGH (has internal pull-up) for normal SPI flash boot.",
+        "safeForGeneral": true,
+        "bootMode": "Must be HIGH for SPI flash boot (default pull-up)",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin -- must be HIGH at boot for SPI flash mode"
+        ]
+      },
+      {
+        "physicalPin": 9,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [
+          "VBUS"
+        ],
+        "side": "right",
+        "position": 1,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "5V from USB VBUS. Can be used to power external devices or supply 5V to the board.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO10",
+        "gpio": 10,
+        "aliases": [],
+        "side": "right",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO"
+        ],
+        "notes": "General-purpose GPIO. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO3",
+        "gpio": 3,
+        "aliases": [
+          "A3"
+        ],
+        "side": "right",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH3"
+        ],
+        "notes": "General-purpose GPIO with ADC. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH3",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 12,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [
+          "A2"
+        ],
+        "side": "right",
+        "position": 4,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH2"
+        ],
+        "notes": "General-purpose GPIO with ADC. Strapping pin -- controls boot message output.",
+        "safeForGeneral": true,
+        "bootMode": "Controls boot log output",
+        "adcChannel": "ADC1_CH2",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin -- affects boot message printing"
+        ]
+      },
+      {
+        "physicalPin": 13,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 5,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 14,
+        "name": "GPIO20",
+        "gpio": 20,
+        "aliases": [
+          "SDA",
+          "RX"
+        ],
+        "side": "right",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "UART0_RX",
+          "I2C_SDA"
+        ],
+        "notes": "Default I2C data line and UART0 RX. Used for serial communication during programming.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_RX",
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Used as UART0 RX -- serial monitor uses this pin"
+        ]
+      },
+      {
+        "physicalPin": 15,
+        "name": "GPIO21",
+        "gpio": 21,
+        "aliases": [
+          "SCL",
+          "TX"
+        ],
+        "side": "right",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "UART0_TX",
+          "I2C_SCL"
+        ],
+        "notes": "Default I2C clock line and UART0 TX. Used for serial communication during programming.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_TX",
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Used as UART0 TX -- serial monitor uses this pin"
+        ]
+      },
+      {
+        "physicalPin": 16,
+        "name": "GPIO9",
+        "gpio": 9,
+        "aliases": [
+          "BOOT"
+        ],
+        "side": "right",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "BOOT"
+        ],
+        "notes": "Connected to BOOT button. Strapping pin -- LOW at boot enters download mode. Has internal pull-up.",
+        "safeForGeneral": false,
+        "bootMode": "LOW=download mode, HIGH=normal boot",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin -- LOW at boot enters download mode",
+          "Connected to BOOT button -- avoid using as output"
+        ]
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 20,
+          "scl": 21
+        }
+      ],
+      "spi": [
+        {
+          "name": "SPI2",
+          "mosi": 6,
+          "miso": 4,
+          "sclk": 5,
+          "cs": 7
+        }
+      ],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 21,
+          "rx": 20
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO2": "Strapping -- controls boot message output",
+      "GPIO8": "Strapping -- must be HIGH for SPI flash boot",
+      "GPIO9": "Strapping -- LOW enters download mode (BOOT button)"
+    },
+    "warnings": [
+      "ESP32-C3 has NO touch sensor capability",
+      "ESP32-C3 has NO DAC",
+      "GPIO18/GPIO19 used for internal USB-Serial -- not broken out",
+      "Only 12 usable GPIOs total",
+      "Board versions differ: v1.0 has blue LED on GPIO7, v2.1 has WS2812B RGB LED"
+    ],
+    "documentationUrl": "https://www.wemos.cc/en/latest/c3/c3_mini.html"
+  },
+  {
+    "id": "wt32-eth01",
+    "name": "WT32-ETH01",
+    "variant": "",
+    "manufacturer": "Wireless-Tag",
+    "family": "ESP32",
+    "chip": "ESP32-WROOM-32",
+    "description": "ESP32 module with built-in LAN8720A 10/100 Ethernet PHY and RJ45 jack. Very limited GPIOs due to Ethernet usage. No onboard USB -- requires external FTDI adapter for programming.",
+    "specs": {
+      "processor": "Dual-core Xtensa LX6 @ 240MHz",
+      "flash": "4MB",
+      "sram": "520KB",
+      "wireless": "Wi-Fi 802.11 b/g/n, Bluetooth 4.2 + BLE, 10/100 Ethernet",
+      "voltage": "3.3V logic, 5V power input",
+      "gpioCount": 15,
+      "adcChannels": 6,
+      "dacChannels": 0,
+      "uartPorts": 2,
+      "spiPorts": 0,
+      "i2cPorts": 1,
+      "pwmChannels": 10,
+      "totalPins": 26
+    },
+    "internalPeripherals": {
+      "ethernet": {
+        "type": "10/100 Ethernet",
+        "driver": "LAN8720A",
+        "interface": "RMII",
+        "pins": {
+          "tx_en": 21,
+          "txd0": 19,
+          "txd1": 22,
+          "rxd0": 25,
+          "rxd1": 26,
+          "rx_crsdv": 27,
+          "mdc": 23,
+          "mdio": 18,
+          "clk": 0,
+          "osc_en": 16,
+          "phy_power": 5
+        },
+        "note": "GPIO0, 5, 16, 18, 19, 21, 22, 23, 25, 26, 27 are consumed by Ethernet PHY and NOT available for user"
+      },
+      "leds": {
+        "tx2_led": {
+          "gpio": 17,
+          "type": "Green LED",
+          "activeLevel": "LOW",
+          "note": "Connected to IO17 (TXD2) -- turns on when pin is LOW"
+        },
+        "rx2_led": {
+          "gpio": 5,
+          "type": "Green LED",
+          "activeLevel": "LOW",
+          "note": "Connected to IO5 (RXD2) -- used by Ethernet PHY power, not freely available"
+        }
+      }
+    },
+    "availableGPIOs": [
+      1,
+      2,
+      3,
+      4,
+      12,
+      14,
+      15,
+      17,
+      32,
+      33,
+      35,
+      36,
+      39
+    ],
+    "usedGPIOs": [
+      0,
+      5,
+      16,
+      18,
+      19,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27
+    ],
+    "pins": [
+      {
+        "physicalPin": 1,
+        "name": "GPIO1",
+        "gpio": 1,
+        "aliases": [
+          "TXD0",
+          "TX0"
+        ],
+        "side": "left",
+        "position": 1,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "UART0_TX"
+        ],
+        "notes": "UART0 TX. Used for serial programming and debug output. HIGH at boot.",
+        "safeForGeneral": false,
+        "bootMode": "Outputs debug data at boot",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Outputs serial debug data at boot",
+          "Used for UART0 TX -- serial programming uses this pin"
+        ]
+      },
+      {
+        "physicalPin": 2,
+        "name": "GPIO3",
+        "gpio": 3,
+        "aliases": [
+          "RXD0",
+          "RX0"
+        ],
+        "side": "left",
+        "position": 2,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "UART0_RX"
+        ],
+        "notes": "UART0 RX. Used for serial programming. HIGH at boot.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART0_RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Used for UART0 RX -- serial programming uses this pin",
+          "Active by default when running -- avoid driving externally"
+        ]
+      },
+      {
+        "physicalPin": 3,
+        "name": "GPIO0",
+        "gpio": 0,
+        "aliases": [
+          "CLK_OUT1"
+        ],
+        "side": "left",
+        "position": 3,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ETH_CLK"
+        ],
+        "notes": "Strapping pin and Ethernet RMII 50MHz clock output. Must be HIGH for normal boot. Used by Ethernet PHY clock.",
+        "safeForGeneral": false,
+        "bootMode": "HIGH=normal boot, LOW=download mode",
+        "adcChannel": "ADC2_CH1",
+        "dacChannel": null,
+        "touchChannel": "TOUCH1",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin -- LOW at boot enters download mode",
+          "Outputs 50MHz Ethernet RMII clock -- NOT available for general use when Ethernet is active",
+          "ADC2 -- cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 4,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 4,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 5,
+        "name": "GPIO39",
+        "gpio": 39,
+        "aliases": [
+          "VN"
+        ],
+        "side": "left",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH3"
+        ],
+        "notes": "Input only. No internal pull-up/pull-down. ADC1 channel 3.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH3",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only -- cannot be used as output",
+          "No internal pull-up or pull-down resistors"
+        ]
+      },
+      {
+        "physicalPin": 6,
+        "name": "GPIO36",
+        "gpio": 36,
+        "aliases": [
+          "VP"
+        ],
+        "side": "left",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH0"
+        ],
+        "notes": "Input only. No internal pull-up/pull-down. ADC1 channel 0.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH0",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only -- cannot be used as output",
+          "No internal pull-up or pull-down resistors"
+        ]
+      },
+      {
+        "physicalPin": 7,
+        "name": "GPIO15",
+        "gpio": 15,
+        "aliases": [],
+        "side": "left",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC2_CH3",
+          "TOUCH3"
+        ],
+        "notes": "Strapping pin -- controls boot log output on UART0. Outputs PWM signal at boot.",
+        "safeForGeneral": true,
+        "bootMode": "LOW silences boot log on UART0",
+        "adcChannel": "ADC2_CH3",
+        "dacChannel": null,
+        "touchChannel": "TOUCH3",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin -- LOW silences boot messages on UART0",
+          "Outputs PWM at boot",
+          "ADC2 -- cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 8,
+        "name": "GPIO14",
+        "gpio": 14,
+        "aliases": [],
+        "side": "left",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC2_CH6",
+          "TOUCH6"
+        ],
+        "notes": "General-purpose GPIO. Outputs PWM signal at boot. Safe for general use after boot.",
+        "safeForGeneral": true,
+        "bootMode": "Outputs PWM signal at boot",
+        "adcChannel": "ADC2_CH6",
+        "dacChannel": null,
+        "touchChannel": "TOUCH6",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Outputs PWM at boot",
+          "ADC2 -- cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 9,
+        "name": "GPIO12",
+        "gpio": 12,
+        "aliases": [
+          "MTDI"
+        ],
+        "side": "left",
+        "position": 9,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC2_CH5",
+          "TOUCH5"
+        ],
+        "notes": "Strapping pin -- must be LOW at boot for 3.3V flash voltage. Safe for output after boot.",
+        "safeForGeneral": false,
+        "bootMode": "Must be LOW for 3.3V flash voltage",
+        "adcChannel": "ADC2_CH5",
+        "dacChannel": null,
+        "touchChannel": "TOUCH5",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin -- HIGH at boot sets flash to 1.8V (will fail on most boards)",
+          "ADC2 -- cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 10,
+        "name": "GPIO35",
+        "gpio": 35,
+        "aliases": [],
+        "side": "left",
+        "position": 10,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH7"
+        ],
+        "notes": "Input only. No internal pull-up/pull-down. ADC1 channel 7.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH7",
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": true,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Input only -- cannot be used as output",
+          "No internal pull-up or pull-down resistors"
+        ]
+      },
+      {
+        "physicalPin": 11,
+        "name": "GPIO4",
+        "gpio": 4,
+        "aliases": [],
+        "side": "left",
+        "position": 11,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC2_CH0",
+          "TOUCH0"
+        ],
+        "notes": "General-purpose GPIO. Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC2_CH0",
+        "dacChannel": null,
+        "touchChannel": "TOUCH0",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "ADC2 -- cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 12,
+        "name": "GPIO2",
+        "gpio": 2,
+        "aliases": [],
+        "side": "left",
+        "position": 12,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC2_CH2",
+          "TOUCH2"
+        ],
+        "notes": "Strapping pin -- must be LOW or floating for normal boot. Safe for output after boot.",
+        "safeForGeneral": true,
+        "bootMode": "Must be LOW or floating for normal boot",
+        "adcChannel": "ADC2_CH2",
+        "dacChannel": null,
+        "touchChannel": "TOUCH2",
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Strapping pin -- must be LOW or floating for normal boot",
+          "ADC2 -- cannot read analog when Wi-Fi is active"
+        ]
+      },
+      {
+        "physicalPin": 13,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "left",
+        "position": 13,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 14,
+        "name": "EN",
+        "gpio": null,
+        "aliases": [
+          "RST",
+          "RESET",
+          "CHIP_PU"
+        ],
+        "side": "right",
+        "position": 1,
+        "type": "control",
+        "functions": [
+          "Enable / Reset"
+        ],
+        "notes": "Active-high chip enable. Pull LOW to reset the ESP32. Has internal pull-up.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": true,
+        "internalPullDown": false,
+        "warnings": [
+          "Pulling LOW resets the chip"
+        ]
+      },
+      {
+        "physicalPin": 15,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 2,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 16,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 3,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "3.3V power input/output. Can be used to power the board or as 3.3V supply.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 17,
+        "name": "EN",
+        "gpio": null,
+        "aliases": [
+          "EN1"
+        ],
+        "side": "right",
+        "position": 4,
+        "type": "control",
+        "functions": [
+          "Enable / Reset"
+        ],
+        "notes": "Second enable/reset pin. Same function as pin 14 (EN). Pull LOW to reset.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": true,
+        "internalPullDown": false,
+        "warnings": [
+          "Pulling LOW resets the chip"
+        ]
+      },
+      {
+        "physicalPin": 18,
+        "name": "GPIO32",
+        "gpio": 32,
+        "aliases": [
+          "CFG"
+        ],
+        "side": "right",
+        "position": 5,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH4",
+          "TOUCH9"
+        ],
+        "notes": "Labeled CFG on board. Can be used as I2C SCL when Ethernet is active. ADC1 channel 4.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH4",
+        "dacChannel": null,
+        "touchChannel": "TOUCH9",
+        "uart": null,
+        "spi": null,
+        "i2c": "SCL",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 19,
+        "name": "GPIO33",
+        "gpio": 33,
+        "aliases": [
+          "485_EN"
+        ],
+        "side": "right",
+        "position": 6,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "ADC1_CH5",
+          "TOUCH8"
+        ],
+        "notes": "Labeled 485_EN on board (RS485 enable for default firmware). Can be used as I2C SDA when Ethernet is active. ADC1 channel 5.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": "ADC1_CH5",
+        "dacChannel": null,
+        "touchChannel": "TOUCH8",
+        "uart": null,
+        "spi": null,
+        "i2c": "SDA",
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": []
+      },
+      {
+        "physicalPin": 20,
+        "name": "GPIO5",
+        "gpio": 5,
+        "aliases": [
+          "RXD2",
+          "RXD"
+        ],
+        "side": "right",
+        "position": 7,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "UART2_RX",
+          "ETH_PHY_POWER"
+        ],
+        "notes": "Labeled RXD on board. UART2 RX. Also used as Ethernet PHY power/reset pin. Connected to green LED (active LOW).",
+        "safeForGeneral": false,
+        "bootMode": "Strapping pin -- affects SDIO slave timing",
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART2_RX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Used by Ethernet PHY power -- NOT available when Ethernet is active",
+          "Connected to green LED (active LOW)",
+          "Strapping pin -- affects SDIO slave timing"
+        ]
+      },
+      {
+        "physicalPin": 21,
+        "name": "GPIO17",
+        "gpio": 17,
+        "aliases": [
+          "TXD2",
+          "TXD"
+        ],
+        "side": "right",
+        "position": 8,
+        "type": "gpio",
+        "functions": [
+          "GPIO",
+          "UART2_TX"
+        ],
+        "notes": "Labeled TXD on board. UART2 TX. Connected to green LED (active LOW). Safe for general use.",
+        "safeForGeneral": true,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": "UART2_TX",
+        "spi": null,
+        "i2c": null,
+        "pwm": true,
+        "interrupt": true,
+        "internalPullUp": true,
+        "internalPullDown": true,
+        "warnings": [
+          "Connected to green LED (active LOW) -- LED turns on when pin is LOW"
+        ]
+      },
+      {
+        "physicalPin": 22,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 9,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 23,
+        "name": "3V3",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 10,
+        "type": "power",
+        "functions": [
+          "3V3"
+        ],
+        "notes": "3.3V power input/output",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 24,
+        "name": "GND",
+        "gpio": null,
+        "aliases": [],
+        "side": "right",
+        "position": 11,
+        "type": "ground",
+        "functions": [
+          "Ground"
+        ],
+        "notes": "Ground",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 25,
+        "name": "5V",
+        "gpio": null,
+        "aliases": [
+          "VCC"
+        ],
+        "side": "right",
+        "position": 12,
+        "type": "power",
+        "functions": [
+          "5V"
+        ],
+        "notes": "5V power input. Supply 5V here to power the board via onboard regulator.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": []
+      },
+      {
+        "physicalPin": 26,
+        "name": "LINK",
+        "gpio": null,
+        "aliases": [
+          "LINK_LED"
+        ],
+        "side": "right",
+        "position": 13,
+        "type": "control",
+        "functions": [
+          "Ethernet Link Status"
+        ],
+        "notes": "Ethernet link status indicator output from LAN8720A. LOW when link is active.",
+        "safeForGeneral": false,
+        "bootMode": null,
+        "adcChannel": null,
+        "dacChannel": null,
+        "touchChannel": null,
+        "uart": null,
+        "spi": null,
+        "i2c": null,
+        "pwm": false,
+        "interrupt": false,
+        "internalPullUp": false,
+        "internalPullDown": false,
+        "warnings": [
+          "Output from Ethernet PHY -- do not drive externally"
+        ]
+      }
+    ],
+    "protocolDefaults": {
+      "i2c": [
+        {
+          "name": "I2C0",
+          "sda": 33,
+          "scl": 32
+        }
+      ],
+      "spi": [],
+      "uart": [
+        {
+          "name": "UART0",
+          "tx": 1,
+          "rx": 3
+        },
+        {
+          "name": "UART2",
+          "tx": 17,
+          "rx": 5
+        }
+      ]
+    },
+    "bootPins": {
+      "GPIO0": "LOW=download mode, HIGH=normal boot (used by Ethernet clock)",
+      "GPIO2": "Must be LOW or floating for normal boot",
+      "GPIO5": "Affects SDIO slave timing (used by Ethernet PHY power)",
+      "GPIO12": "Must be LOW for 3.3V flash voltage",
+      "GPIO15": "LOW silences boot log on UART0"
+    },
+    "warnings": [
+      "No onboard USB -- requires external USB-to-serial adapter (FTDI) for programming",
+      "GPIO0, 5, 16, 18, 19, 21, 22, 23, 25, 26, 27 are used by Ethernet PHY -- NOT available for user",
+      "DAC1 (GPIO25) and DAC2 (GPIO26) are consumed by Ethernet -- no DAC available",
+      "GPIO35, GPIO36, GPIO39 are input-only with no internal pull resistors",
+      "GPIO12 must be LOW at boot -- do not connect pull-up",
+      "IO5 (RXD2) and IO17 (TXD2) have green LEDs connected (active LOW)",
+      "To program: connect IO0 to GND, press EN/reset, then release IO0"
+    ],
+    "documentationUrl": "https://www.espboards.dev/esp32/wt32-eth01/"
   }
 ]
